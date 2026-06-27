@@ -180,7 +180,7 @@ fun NewsScreen(
                                                 onClick = { viewModel.searchQuery.value = "" },
                                             ) {
                                                 Icon(
-                                                    painter = painterResource(R.drawable.solar_close_circle),
+                                                    painter = painterResource(R.drawable.solar_close_square),
                                                     contentDescription = stringResource(R.string.close),
                                                 )
                                             }

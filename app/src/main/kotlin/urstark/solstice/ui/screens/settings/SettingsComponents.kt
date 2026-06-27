@@ -335,7 +335,7 @@ fun SettingsUpdateBanner(
 
             androidx.compose.material3.IconButton(onClick = onDismiss) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_circle),
+                    painter = painterResource(R.drawable.solar_close_square),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f),
                     modifier = Modifier.size(18.dp),

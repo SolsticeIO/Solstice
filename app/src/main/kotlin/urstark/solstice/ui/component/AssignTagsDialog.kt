@@ -265,7 +265,7 @@ private fun AssignTagRow(
             Icon(
                 painter =
                     painterResource(
-                        if (selected) R.drawable.solar_checklist else R.drawable.solar_add_circle,
+                        if (selected) R.drawable.solar_check_square else R.drawable.solar_add_circle,
                     ),
                 contentDescription = null,
                 tint =
@@ -466,7 +466,7 @@ private fun AssignPlaylistRow(
             Icon(
                 painter =
                     painterResource(
-                        if (selected) R.drawable.solar_checklist else R.drawable.solar_add_circle,
+                        if (selected) R.drawable.solar_check_square else R.drawable.solar_add_circle,
                     ),
                 contentDescription = null,
                 tint =
@@ -652,7 +652,7 @@ private fun TagColorSwatch(
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_checklist),
+                            painter = painterResource(R.drawable.solar_check_square),
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.onPrimaryContainer,
                             modifier = Modifier.size(18.dp),

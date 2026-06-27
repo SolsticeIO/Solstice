@@ -391,7 +391,7 @@ fun SuggestionItem(
         if (!online) {
             IconButton(onClick = onDelete) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_circle),
+                    painter = painterResource(R.drawable.solar_close_square),
                     contentDescription = null,
                     tint = if (pureBlack) Color.White.copy(alpha = 0.4f) else MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.size(18.dp),

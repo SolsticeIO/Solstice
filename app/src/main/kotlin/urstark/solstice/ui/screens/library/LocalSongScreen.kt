@@ -360,7 +360,7 @@ fun LocalSongScreen(
                                         {
                                             IconButton(onClick = { query = "" }) {
                                                 Icon(
-                                                    painter = painterResource(R.drawable.solar_close_circle),
+                                                    painter = painterResource(R.drawable.solar_close_square),
                                                     contentDescription = stringResource(R.string.close),
                                                 )
                                             }
@@ -911,7 +911,7 @@ private fun LocalSongScanSheet(
                                     Icon(
                                         painter =
                                             painterResource(
-                                                if (hasStoragePermission) R.drawable.solar_check_circle else R.drawable.solar_close_circle,
+                                                if (hasStoragePermission) R.drawable.solar_check_circle else R.drawable.solar_close_square,
                                             ),
                                         contentDescription = null,
                                         tint =
@@ -1329,7 +1329,7 @@ private fun LocalSongFolderChip(
                             .combinedClickable(enabled = enabled, onClick = onRemove),
                 ) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_close_circle),
+                        painter = painterResource(R.drawable.solar_close_square),
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onSecondaryContainer,
                         modifier = Modifier.size(14.dp),

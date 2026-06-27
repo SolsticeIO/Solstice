@@ -568,7 +568,7 @@ private fun PreferenceSelectionOption(
         if (selected) {
             Spacer(Modifier.width(16.dp))
             Icon(
-                painter = painterResource(R.drawable.solar_checklist),
+                painter = painterResource(R.drawable.solar_check_square),
                 contentDescription = null,
                 tint = contentColor,
                 modifier = Modifier.size(28.dp),
@@ -641,7 +641,7 @@ fun SwitchPreference(
                         Icon(
                             painter =
                                 painterResource(
-                                    id = if (isChecked) R.drawable.solar_checklist else R.drawable.solar_close_circle,
+                                    id = if (isChecked) R.drawable.solar_check_square else R.drawable.solar_close_square,
                                 ),
                             contentDescription = null,
                             modifier = Modifier.size(SwitchDefaults.IconSize),

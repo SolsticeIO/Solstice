@@ -1725,7 +1725,7 @@ fun EqualizerDialog(
                     navigationIcon = {
                         IconButton(onClick = onDismiss) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_close_circle),
+                                painter = painterResource(R.drawable.solar_close_square),
                                 contentDescription = null,
                             )
                         }
@@ -2079,7 +2079,7 @@ private fun EqActivateRow(
                     if (enabled) {
                         {
                             Icon(
-                                painter = painterResource(R.drawable.solar_checklist),
+                                painter = painterResource(R.drawable.solar_check_square),
                                 contentDescription = null,
                                 modifier = Modifier.size(SwitchDefaults.IconSize),
                             )
@@ -2295,7 +2295,7 @@ private fun EqToggleSliderRow(
                 onCheckedChange = onEnabledChange,
                 thumbContent = {
                     Icon(
-                        painter = painterResource(id = if (enabled) R.drawable.solar_checklist else R.drawable.solar_close_circle),
+                        painter = painterResource(id = if (enabled) R.drawable.solar_check_square else R.drawable.solar_close_square),
                         contentDescription = null,
                         modifier = Modifier.size(SwitchDefaults.IconSize),
                     )

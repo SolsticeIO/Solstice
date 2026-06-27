@@ -59,7 +59,7 @@ fun ThumbnailCornerRadiusSelectorButton(
         description = stringResource(id = R.string.corner_radius, thumbnailCornerRadius.roundToInt()),
         icon = {
             Icon(
-                painter = painterResource(id = R.drawable.solar_link_round),
+                painter = painterResource(id = R.drawable.solar_pallete_2),
                 contentDescription = null,
             )
         },
@@ -359,7 +359,7 @@ fun ThumbnailCornerRadiusModal(
                         ) {
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_checklist),
+                                    painter = painterResource(R.drawable.solar_check_square),
                                     contentDescription = null,
                                     modifier = Modifier.size(18.dp),
                                 )

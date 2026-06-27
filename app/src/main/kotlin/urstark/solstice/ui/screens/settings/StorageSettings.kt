@@ -420,7 +420,7 @@ fun StorageSettings(
                             },
                         icon = {
                             Icon(
-                                painter = painterResource(R.drawable.solar_link_round),
+                                painter = painterResource(R.drawable.solar_gallery_download),
                                 contentDescription = null,
                             )
                         },
@@ -880,7 +880,7 @@ private fun StorageLocationOptionRow(
             if (selected) {
                 Spacer(Modifier.width(16.dp))
                 Icon(
-                    painter = painterResource(R.drawable.solar_checklist),
+                    painter = painterResource(R.drawable.solar_check_square),
                     contentDescription = null,
                     modifier = Modifier.size(24.dp),
                 )

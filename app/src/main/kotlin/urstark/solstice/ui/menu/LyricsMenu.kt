@@ -860,7 +860,7 @@ private fun LyricsSearchResultHeader(
                 modifier = Modifier.size(48.dp),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_circle),
+                    painter = painterResource(R.drawable.solar_close_square),
                     contentDescription = stringResource(R.string.close),
                     tint = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
@@ -1137,7 +1137,7 @@ private fun LyricsSearchFooterLoading() {
 @Composable
 private fun LyricsSearchEmptyContent() {
     LyricsSearchMessageContent(
-        icon = R.drawable.solar_global,
+        icon = R.drawable.solar_earth,
         text = stringResource(R.string.lyrics_not_found),
         containerColor = MaterialTheme.colorScheme.errorContainer,
         contentColor = MaterialTheme.colorScheme.onErrorContainer,
@@ -1359,7 +1359,7 @@ private fun LyricsSearchInputHeader(onDismiss: () -> Unit) {
 
         IconButton(onClick = onDismiss) {
             Icon(
-                painter = painterResource(R.drawable.solar_close_circle),
+                painter = painterResource(R.drawable.solar_close_square),
                 contentDescription = stringResource(R.string.close),
             )
         }
@@ -1392,7 +1392,7 @@ private fun LyricsSearchTextField(
                 {
                     IconButton(onClick = { onValueChange(TextFieldValue()) }) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_close_circle),
+                            painter = painterResource(R.drawable.solar_close_square),
                             contentDescription = stringResource(R.string.clear),
                         )
                     }

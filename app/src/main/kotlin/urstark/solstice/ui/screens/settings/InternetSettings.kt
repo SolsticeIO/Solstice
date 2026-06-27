@@ -307,7 +307,7 @@ fun InternetSettings(
                 item {
                     PreferenceEntry(
                         title = { Text(stringResource(R.string.test_proxy_connection)) },
-                        icon = { Icon(painterResource(R.drawable.solar_checklist), null) },
+                        icon = { Icon(painterResource(R.drawable.solar_check_square), null) },
                         onClick = {
                             if (testingProxy) return@PreferenceEntry
                             scope.launch(Dispatchers.IO) {
@@ -500,7 +500,7 @@ private fun IpRotationPreference(
                             Icon(
                                 painter =
                                     painterResource(
-                                        id = if (isChecked) R.drawable.solar_checklist else R.drawable.solar_close_circle,
+                                        id = if (isChecked) R.drawable.solar_check_square else R.drawable.solar_close_square,
                                     ),
                                 contentDescription = null,
                                 modifier = Modifier.size(SwitchDefaults.IconSize),

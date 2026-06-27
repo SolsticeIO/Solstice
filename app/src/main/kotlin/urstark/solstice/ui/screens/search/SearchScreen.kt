@@ -686,7 +686,7 @@ private fun SearchStateMessage(
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Icon(
-                painter = painterResource(R.drawable.solar_global),
+                painter = painterResource(R.drawable.solar_earth),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.outline,
             )

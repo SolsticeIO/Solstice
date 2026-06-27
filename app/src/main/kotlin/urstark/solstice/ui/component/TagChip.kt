@@ -147,7 +147,7 @@ fun TagChip(
             {
                 if (selected) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_checklist),
+                        painter = painterResource(R.drawable.solar_check_square),
                         contentDescription = null,
                         tint = Color.White,
                         modifier = Modifier.size(12.dp),
@@ -174,7 +174,7 @@ fun TagChip(
                     contentAlignment = Alignment.Center,
                 ) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_close_circle),
+                        painter = painterResource(R.drawable.solar_close_square),
                         contentDescription = null,
                         tint = contentColor,
                         modifier = Modifier.size(14.dp),

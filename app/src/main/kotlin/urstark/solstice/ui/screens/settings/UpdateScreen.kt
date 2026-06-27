@@ -823,7 +823,7 @@ fun UpdateScreen(
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_checklist),
+                            painter = painterResource(R.drawable.solar_check_square),
                             contentDescription = null,
                             modifier = Modifier.size(24.dp),
                             tint = MaterialTheme.colorScheme.onPrimaryContainer,
@@ -1096,7 +1096,7 @@ private fun UpdateControlsPanel(
                 },
                 leadingContent = {
                     FeatureIcon(
-                        iconRes = R.drawable.solar_eraser,
+                        iconRes = R.drawable.solar_bell_bing,
                         containerColor = MaterialTheme.colorScheme.secondaryContainer,
                         contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
                     )

@@ -737,7 +737,7 @@ private fun ProfileIdentityCard(
                     ) {
                         Box(contentAlignment = Alignment.Center) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_checklist),
+                                painter = painterResource(R.drawable.solar_check_square),
                                 contentDescription = null,
                                 modifier = Modifier.size(14.dp),
                                 tint = MaterialTheme.colorScheme.onPrimary,

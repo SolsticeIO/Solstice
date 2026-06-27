@@ -802,7 +802,7 @@ fun CachePlaylistScreen(
                     Icon(
                         painter =
                             painterResource(
-                                if (selection) R.drawable.solar_close_circle else R.drawable.solar_arrow_left,
+                                if (selection) R.drawable.solar_close_square else R.drawable.solar_arrow_left,
                             ),
                         contentDescription = null,
                     )

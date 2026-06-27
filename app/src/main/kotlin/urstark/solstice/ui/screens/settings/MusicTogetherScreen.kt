@@ -818,7 +818,7 @@ private fun JoinControlsCard(
 
                 join.joined -> {
                     Icon(
-                        painter = painterResource(R.drawable.solar_checklist),
+                        painter = painterResource(R.drawable.solar_check_square),
                         contentDescription = null,
                         modifier = Modifier.size(18.dp),
                     )
@@ -928,13 +928,13 @@ private fun ParticipantRow(
                 if (participant.showApproveActions) {
                     IconButton(onClick = { viewModel.approveParticipant(participant.id) }) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_checklist),
+                            painter = painterResource(R.drawable.solar_check_square),
                             contentDescription = stringResource(R.string.together_approve),
                         )
                     }
                     IconButton(onClick = { viewModel.rejectParticipant(participant.id) }) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_close_circle),
+                            painter = painterResource(R.drawable.solar_close_square),
                             contentDescription = stringResource(R.string.together_reject),
                         )
                     }
@@ -1391,7 +1391,7 @@ private fun WelcomeDialog(
                 shapes = ButtonDefaults.shapes(),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_checklist),
+                    painter = painterResource(R.drawable.solar_check_square),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp),
                 )

@@ -456,7 +456,7 @@ private fun RecognitionHistoryBottomSheet(
                 )
                 IconButton(onClick = onDismiss) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_close_circle),
+                        painter = painterResource(R.drawable.solar_close_square),
                         contentDescription = stringResource(R.string.close),
                     )
                 }
@@ -482,7 +482,7 @@ private fun RecognitionHistoryBottomSheet(
                                 {
                                     IconButton(onClick = { query = "" }) {
                                         Icon(
-                                            painter = painterResource(R.drawable.solar_close_circle),
+                                            painter = painterResource(R.drawable.solar_close_square),
                                             contentDescription = stringResource(R.string.clear),
                                         )
                                     }
@@ -520,7 +520,7 @@ private fun RecognitionHistoryBottomSheet(
                     filteredItems.isEmpty() -> {
                         item(key = "empty_search", contentType = "empty_search") {
                             RecognitionHistoryEmptyState(
-                                iconRes = R.drawable.solar_global,
+                                iconRes = R.drawable.solar_earth,
                                 title = stringResource(R.string.music_recognition_history_no_results_title),
                                 body = stringResource(R.string.music_recognition_history_no_results_body),
                             )

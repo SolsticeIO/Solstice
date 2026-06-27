@@ -498,7 +498,7 @@ fun HistoryScreen(
                             Icon(
                                 painter =
                                     painterResource(
-                                        if (selectionCount > 0) R.drawable.solar_close_circle else R.drawable.solar_arrow_left,
+                                        if (selectionCount > 0) R.drawable.solar_close_square else R.drawable.solar_arrow_left,
                                     ),
                                 contentDescription = null,
                             )
@@ -602,7 +602,7 @@ fun HistoryScreen(
                                 onLongClick = {},
                             ) {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_close_circle),
+                                    painter = painterResource(R.drawable.solar_close_square),
                                     contentDescription = null,
                                 )
                             }

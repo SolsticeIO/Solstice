@@ -73,7 +73,7 @@ fun DownloadProgressFloatingToolbar(
                 contentColor = colorScheme.onErrorContainer,
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_circle),
+                    painter = painterResource(R.drawable.solar_close_square),
                     contentDescription = stringResource(R.string.close),
                     modifier = Modifier.size(22.dp),
                 )
