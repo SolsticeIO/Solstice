@@ -420,7 +420,7 @@ fun StorageSettings(
                             },
                         icon = {
                             Icon(
-                                painter = painterResource(R.drawable.solar_gallery_download),
+                                painter = painterResource(R.drawable.solar_database),
                                 contentDescription = null,
                             )
                         },
@@ -486,7 +486,7 @@ fun StorageSettings(
                             },
                         icon = {
                             Icon(
-                                painter = painterResource(R.drawable.solar_microphone),
+                                painter = painterResource(R.drawable.solar_database),
                                 contentDescription = null,
                             )
                         },

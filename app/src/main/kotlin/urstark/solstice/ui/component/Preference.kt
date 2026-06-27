@@ -107,9 +107,9 @@ val LocalPreferenceGroupPosition = compositionLocalOf<PreferenceGroupPosition?> 
 
 private val PreferenceGroupLargeCorner = 28.dp
 private val PreferenceGroupSmallCorner = 6.dp
-private val PreferenceGroupHorizontalPadding = 26.dp
+private val PreferenceGroupHorizontalPadding = 12.dp
 private val PreferenceEntryMinHeight = 88.dp
-private val PreferenceEntryHorizontalPadding = 22.dp
+private val PreferenceEntryHorizontalPadding = 14.dp
 private val PreferenceEntryVerticalPadding = 18.dp
 
 @Composable

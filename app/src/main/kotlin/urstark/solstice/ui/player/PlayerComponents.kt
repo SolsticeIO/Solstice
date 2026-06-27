@@ -3292,7 +3292,7 @@ private fun V9Header(
         horizontalArrangement = Arrangement.spacedBy(14.dp),
     ) {
         V9HeaderButton(
-            iconRes = R.drawable.solar_code,
+            iconRes = R.drawable.solar_alt_arrow_down,
             contentDescription = null,
             containerColor = containerColor,
             iconColor = iconColor,

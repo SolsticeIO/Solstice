@@ -105,8 +105,9 @@ def parse_svg_to_compose(svg_path, kt_name):
 
 def main():
     svg_dirs = [
-        Path("/home/stark/Downloads/My Self/Music/solar-icons/icons/SVG/Broken"),
-        Path("/home/stark/Downloads/My Self/Music/solar-icons/icons/SVG/Outline")
+        Path("/home/stark/Downloads/My Self/Music/solar-icons/icons/SVG/Linear"),
+        Path("/home/stark/Downloads/My Self/Music/solar-icons/icons/SVG/Outline"),
+        Path("/home/stark/Downloads/My Self/Music/solar-icons/icons/SVG/Broken")
     ]
     with open('icon_mapping.json', 'r') as f:
         mapping = json.load(f)

@@ -1669,7 +1669,7 @@ class MainActivity : ComponentActivity() {
                                                                 }
                                                             }) {
                                                                 Icon(
-                                                                    painter = painterResource(R.drawable.solar_wallpaper),
+                                                                    painter = painterResource(R.drawable.solar_bell),
                                                                     contentDescription = stringResource(R.string.news),
                                                                 )
                                                             }
@@ -1679,7 +1679,7 @@ class MainActivity : ComponentActivity() {
                                                         onClick = { navController.navigate("new_release") },
                                                     ) {
                                                         Icon(
-                                                            painter = painterResource(R.drawable.solar_eraser),
+                                                            painter = painterResource(R.drawable.solar_fire),
                                                             contentDescription = stringResource(R.string.new_release_albums),
                                                         )
                                                     }

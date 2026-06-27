@@ -47,7 +47,7 @@ fun buildSettingsGroups(
                         ),
                         SettingsItem(
                             key = "stats",
-                            icon = painterResource(R.drawable.solar_chart),
+                            icon = painterResource(R.drawable.solar_history),
                             title = stringResource(R.string.settings_stats_title),
                             subtitle = stringResource(R.string.settings_stats_subtitle),
                             accentColor = MaterialTheme.colorScheme.primary,
@@ -121,7 +121,7 @@ fun buildSettingsGroups(
                         add(
                             SettingsItem(
                                 key = "content",
-                                icon = painterResource(R.drawable.solar_translation),
+                                icon = painterResource(R.drawable.solar_folder),
                                 title = stringResource(R.string.content),
                                 subtitle = stringResource(R.string.settings_content_subtitle),
                                 accentColor = MaterialTheme.colorScheme.primary,

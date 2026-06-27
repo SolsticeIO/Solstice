@@ -669,7 +669,7 @@ fun AppearanceSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.aod_customize_title)) },
                     description = stringResource(R.string.aod_customize_entry_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_bed), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_moon), null) },
                     onClick = { navController.navigate("settings/appearance/aod_customized") },
                 )
             }

@@ -430,31 +430,31 @@ class AboutViewModel
                     AboutLinkCollection.of(
                         AboutLinkUiModel(
                             id = "github",
-                            iconResId = R.drawable.solar_gift,
+                            iconResId = R.drawable.github,
                             labelResId = R.string.about_content_desc_github,
                             url = "https://github.com/SolsticeIO/Solstice",
                         ),
                         AboutLinkUiModel(
                             id = "website",
-                            iconResId = R.drawable.solar_exit,
+                            iconResId = R.drawable.website,
                             labelResId = R.string.about_content_desc_website,
                             url = "https://solstice.koiiverse.cloud",
                         ),
                         AboutLinkUiModel(
                             id = "telegram",
-                            iconResId = R.drawable.solar_stream,
+                            iconResId = R.drawable.telegram,
                             labelResId = R.string.about_content_desc_telegram,
                             url = "https://t.me/SolsticeIO",
                         ),
                         AboutLinkUiModel(
                             id = "donate",
-                            iconResId = R.drawable.solar_feed,
+                            iconResId = R.drawable.solar_heart,
                             labelResId = R.string.about_content_desc_donate,
                             url = "https://koiiverse.cloud/donate",
                         ),
                         AboutLinkUiModel(
                             id = "discord",
-                            iconResId = R.drawable.solar_record,
+                            iconResId = R.drawable.discord,
                             labelResId = R.string.discord,
                             url = "https://discord.gg/XF2fpb9rTq",
                         ),
@@ -475,19 +475,19 @@ class AboutViewModel
                             AboutLinkCollection.of(
                                 AboutLinkUiModel(
                                     id = "github",
-                                    iconResId = R.drawable.solar_gift,
+                                    iconResId = R.drawable.github,
                                     labelResId = R.string.about_content_desc_github,
                                     url = "https://github.com/rukamori",
                                 ),
                                 AboutLinkUiModel(
                                     id = "website",
-                                    iconResId = R.drawable.solar_exit,
+                                    iconResId = R.drawable.website,
                                     labelResId = R.string.about_content_desc_website,
                                     url = "https://koiiverse.cloud",
                                 ),
                                 AboutLinkUiModel(
                                     id = "discord",
-                                    iconResId = R.drawable.solar_tornado_small,
+                                    iconResId = R.drawable.discord,
                                     labelResId = R.string.about_content_desc_discord,
                                     url = "https://discord.com/users/886971572668219392",
                                 ),
@@ -504,7 +504,7 @@ class AboutViewModel
                                 AboutLinkCollection.of(
                                     AboutLinkUiModel(
                                         id = "github",
-                                        iconResId = R.drawable.solar_gift,
+                                        iconResId = R.drawable.github,
                                         labelResId = R.string.about_content_desc_github,
                                         url = "https://github.com/mikooochi",
                                     ),
@@ -519,13 +519,13 @@ class AboutViewModel
                                 AboutLinkCollection.of(
                                     AboutLinkUiModel(
                                         id = "github",
-                                        iconResId = R.drawable.solar_gift,
+                                        iconResId = R.drawable.github,
                                         labelResId = R.string.about_content_desc_github,
                                         url = "https://github.com/Windowstechtips",
                                     ),
                                     AboutLinkUiModel(
                                         id = "discord",
-                                        iconResId = R.drawable.solar_tornado_small,
+                                        iconResId = R.drawable.discord,
                                         labelResId = R.string.about_content_desc_discord,
                                         url = "https://discord.com/users/840839409640800258",
                                     ),
@@ -540,7 +540,7 @@ class AboutViewModel
                                 AboutLinkCollection.of(
                                     AboutLinkUiModel(
                                         id = "github",
-                                        iconResId = R.drawable.solar_gift,
+                                        iconResId = R.drawable.github,
                                         labelResId = R.string.about_content_desc_github,
                                         url = "https://github.com/sang765",
                                     ),
@@ -555,7 +555,7 @@ class AboutViewModel
                                 AboutLinkCollection.of(
                                     AboutLinkUiModel(
                                         id = "github",
-                                        iconResId = R.drawable.solar_gift,
+                                        iconResId = R.drawable.github,
                                         labelResId = R.string.about_content_desc_github,
                                         url = "https://github.com/4nx3b",
                                     ),
@@ -588,7 +588,7 @@ class AboutViewModel
                                 AboutLinkCollection.of(
                                     AboutLinkUiModel(
                                         id = "github",
-                                        iconResId = R.drawable.solar_gift,
+                                        iconResId = R.drawable.github,
                                         labelResId = R.string.about_content_desc_github,
                                         url = "https://github.com/mostafaalagamy",
                                     ),
@@ -603,7 +603,7 @@ class AboutViewModel
                                 AboutLinkCollection.of(
                                     AboutLinkUiModel(
                                         id = "github",
-                                        iconResId = R.drawable.solar_gift,
+                                        iconResId = R.drawable.github,
                                         labelResId = R.string.about_content_desc_github,
                                         url = "https://github.com/z-huang",
                                     ),

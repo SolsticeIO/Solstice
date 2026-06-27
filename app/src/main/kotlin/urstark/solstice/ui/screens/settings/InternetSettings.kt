@@ -479,7 +479,7 @@ private fun IpRotationPreference(
                     } else {
                         FilledTonalIconButton(onClick = onRefresh) {
                             Icon(
-                                painterResource(R.drawable.solar_sun),
+                                painterResource(R.drawable.solar_refresh),
                                 contentDescription = stringResource(R.string.ip_rotation_refresh),
                             )
                         }

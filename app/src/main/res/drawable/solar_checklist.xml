@@ -3,7 +3,7 @@
     <path android:pathData="M2 5.5L3.21429 7L7.5 3" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" />
     <path android:pathData="M2 12.5L3.21429 14L7.5 10" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" />
     <path android:pathData="M2 19.5L3.21429 21L7.5 17" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" />
-    <path android:pathData="M22 12H17M12 12H13.5" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" />
-    <path android:pathData="M12 19H17M20.5 19H22" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" />
+    <path android:pathData="M22 19L12 19" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" />
+    <path android:pathData="M22 12L12 12" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" />
     <path android:pathData="M22 5L12 5" android:strokeColor="#FFFFFF" android:strokeWidth="1.5" android:strokeLineCap="round" />
 </vector>

@@ -427,7 +427,7 @@ fun DiscordSettings(
                             },
                             leadingIcon = {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_code),
+                                    painter = painterResource(R.drawable.solar_alt_arrow_down),
                                     contentDescription = null,
                                 )
                             },
@@ -876,7 +876,7 @@ private fun DiscordAccountGroupCard(
                     ) {
                         Box(contentAlignment = Alignment.Center) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_record),
+                                painter = painterResource(R.drawable.discord),
                                 contentDescription = null,
                                 modifier = Modifier.size(40.dp),
                                 tint = MaterialTheme.colorScheme.onSecondaryContainer,

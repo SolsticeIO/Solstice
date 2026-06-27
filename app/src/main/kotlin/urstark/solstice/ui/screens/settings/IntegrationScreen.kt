@@ -75,7 +75,7 @@ fun IntegrationScreen(
             item {
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.discord_integration)) },
-                    icon = { Icon(painterResource(R.drawable.solar_record), null) },
+                    icon = { Icon(painterResource(R.drawable.discord), null) },
                     onClick = {
                         navController.navigate("settings/discord")
                     },

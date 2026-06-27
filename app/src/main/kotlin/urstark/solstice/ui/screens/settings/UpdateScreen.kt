@@ -1310,7 +1310,7 @@ private fun CommitHistorySection(
                 },
                 trailingContent = {
                     Icon(
-                        painter = painterResource(R.drawable.solar_code),
+                        painter = painterResource(R.drawable.solar_alt_arrow_down),
                         contentDescription = null,
                         modifier = Modifier.rotate(rotationAngle),
                     )

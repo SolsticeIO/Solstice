@@ -265,7 +265,7 @@ fun LibraryPlaylistsScreen(
                             )
                             Spacer(modifier = Modifier.width(6.dp))
                             Icon(
-                                painter = painterResource(id = R.drawable.solar_code),
+                                painter = painterResource(id = R.drawable.solar_alt_arrow_down),
                                 contentDescription = null,
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant,
                                 modifier = Modifier.size(16.dp),

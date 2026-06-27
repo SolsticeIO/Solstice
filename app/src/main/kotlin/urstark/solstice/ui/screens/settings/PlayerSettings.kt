@@ -313,7 +313,7 @@ fun PlayerSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.low_data_mode_title)) },
                     description = stringResource(R.string.low_data_mode_description),
-                    icon = { Icon(painterResource(R.drawable.solar_end_call), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_danger_circle), null) },
                     checked = lowDataMode,
                     onCheckedChange = onLowDataModeChange,
                 )
@@ -365,7 +365,7 @@ fun PlayerSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.skip_silence)) },
-                    icon = { Icon(painterResource(R.drawable.solar_forward), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_skip_next), null) },
                     checked = skipSilence,
                     onCheckedChange = onSkipSilenceChange,
                     isEnabled = !audioOffload,
@@ -385,7 +385,7 @@ fun PlayerSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.audio_offload)) },
                     description = stringResource(R.string.audio_offload_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_feed), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_cpu), null) },
                     checked = audioOffload,
                     onCheckedChange = { enabled ->
                         onAudioOffloadChange(enabled)
@@ -401,7 +401,7 @@ fun PlayerSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.seek_seconds_addup)) },
                     description = stringResource(R.string.seek_seconds_addup_description),
-                    icon = { Icon(painterResource(R.drawable.solar_arrow_right), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_routing), null) },
                     checked = seekExtraSeconds,
                     onCheckedChange = onSeekExtraSeconds,
                 )
@@ -528,7 +528,7 @@ fun PlayerSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.manage_playlist_tags)) },
                     description = stringResource(R.string.manage_playlist_tags_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_sale), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_tag), null) },
                     onClick = { showTagsManagementDialog = true },
                 )
             }

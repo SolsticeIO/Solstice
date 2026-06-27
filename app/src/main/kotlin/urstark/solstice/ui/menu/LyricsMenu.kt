@@ -957,7 +957,7 @@ private fun LyricsSearchResultItem(
                     Icon(
                         painter =
                             painterResource(
-                                if (isExpanded) R.drawable.solar_ladle else R.drawable.solar_code,
+                                if (isExpanded) R.drawable.solar_alt_arrow_up else R.drawable.solar_alt_arrow_down,
                             ),
                         contentDescription = stringResource(R.string.details),
                         tint = contentColor,
