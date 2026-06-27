@@ -1,0 +1,33 @@
+/*
+ * Solstice (2026)
+ * © Stark — github.com/urstark
+ * 
+ * @@BASED_ON_SOLSTICE_TOKEN@@
+ * © Rukamori — github.com/rukamori
+ * 
+ * GPL-3.0 License | Contributors: see git history
+ * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
+ */
+package urstark.solstice.extensions
+
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import urstark.solstice.constants.InnerTubeCookieKey
+import urstark.solstice.constants.YtmSyncKey
+import urstark.solstice.innertube.utils.hasYouTubeLoginCookie
+import urstark.solstice.utils.dataStore
+import urstark.solstice.utils.get
+
+fun Context.isSyncEnabled(): Boolean = dataStore.get(YtmSyncKey, true) && isUserLoggedIn()
+
+fun Context.isUserLoggedIn(): Boolean {
+    val cookie = dataStore[InnerTubeCookieKey] ?: ""
+    return hasYouTubeLoginCookie(cookie) && isInternetConnected()
+}
+
+fun Context.isInternetConnected(): Boolean {
+    val connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    val networkCapabilities = connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)
+    return networkCapabilities?.hasCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET) ?: false
+}

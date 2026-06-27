@@ -1,11 +1,14 @@
 /*
- * ArchiveTune (2026)
+ * Solstice (2026)
+ * © Stark — github.com/urstark
+ * 
+ * @@BASED_ON_SOLSTICE_TOKEN@@
  * © Rukamori — github.com/rukamori
+ * 
  * GPL-3.0 License | Contributors: see git history
  * Do not remove or alter this notice. - Per GPL-3.0 Section 4 & Section 5
  */
-
-package moe.rukamori.archivetune.shazamkit
+package urstark.solstice.shazamkit
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -27,9 +30,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.serialization.json.Json
-import moe.rukamori.archivetune.shazamkit.models.RecognitionResult
-import moe.rukamori.archivetune.shazamkit.models.ShazamRequestJson
-import moe.rukamori.archivetune.shazamkit.models.ShazamResponseJson
+import urstark.solstice.shazamkit.models.RecognitionResult
+import urstark.solstice.shazamkit.models.ShazamRequestJson
+import urstark.solstice.shazamkit.models.ShazamResponseJson
 import java.util.UUID
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.ConcurrentLinkedQueue

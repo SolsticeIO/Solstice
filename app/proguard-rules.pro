@@ -100,11 +100,11 @@
 
 ## Queue Persistence Rules
 # Keep queue-related classes to prevent serialization issues in release builds
--keep class moe.rukamori.archivetune.models.PersistQueue { *; }
--keep class moe.rukamori.archivetune.models.PersistPlayerState { *; }
--keep class moe.rukamori.archivetune.models.QueueData { *; }
--keep class moe.rukamori.archivetune.models.QueueType { *; }
--keep class moe.rukamori.archivetune.playback.queues.** { *; }
+-keep class urstark.solstice.models.PersistQueue { *; }
+-keep class urstark.solstice.models.PersistPlayerState { *; }
+-keep class urstark.solstice.models.QueueData { *; }
+-keep class urstark.solstice.models.QueueType { *; }
+-keep class urstark.solstice.playback.queues.** { *; }
 
 # Keep serialization methods for queue persistence
 -keepclassmembers class * implements java.io.Serializable {

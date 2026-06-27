@@ -37,11 +37,11 @@ val hasReleaseSigningConfig =
         releaseKeyPassword != null
 
 android {
-    namespace = "moe.rukamori.archivetune"
+    namespace = "urstark.solstice"
     compileSdk = 37
 
     defaultConfig {
-    applicationId = "moe.rukamori.archivetune"
+    applicationId = "urstark.solstice"
         minSdk = 26
         targetSdk = 37
         versionCode = 137

@@ -1,1 +1,1 @@
-https://archivetune-api.koiiverse.cloud
+https://solstice-api.koiiverse.cloud
