@@ -27,7 +27,7 @@ fun DebugPanelItem(
     trailingContent: (@Composable () -> Unit)? = null,
 ): Material3SettingsItem =
     Material3SettingsItem(
-        icon = painterResource(R.drawable.solar_inbox),
+        icon = painterResource(R.drawable.solar_info_circle),
         title = title,
         description = description,
         trailingContent = trailingContent,

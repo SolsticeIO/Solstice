@@ -87,7 +87,7 @@ fun IntegrationScreen(
             item {
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.lastfm_integration)) },
-                    icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_key), null) },
                     onClick = {
                         navController.navigate("settings/lastfm")
                     },
@@ -98,7 +98,7 @@ fun IntegrationScreen(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.listenbrainz_scrobbling)) },
                     description = stringResource(R.string.listenbrainz_scrobbling_description),
-                    icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_key), null) },
                     checked = listenBrainzEnabled,
                     onCheckedChange = onListenBrainzEnabledChange,
                 )
@@ -117,7 +117,7 @@ fun IntegrationScreen(
                             },
                         )
                     },
-                    icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_key), null) },
                     onClick = { showListenBrainzTokenEditor.value = true },
                 )
             }

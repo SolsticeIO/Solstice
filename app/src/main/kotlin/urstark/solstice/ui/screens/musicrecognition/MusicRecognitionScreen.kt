@@ -520,7 +520,7 @@ private fun RecognitionHistoryBottomSheet(
                     filteredItems.isEmpty() -> {
                         item(key = "empty_search", contentType = "empty_search") {
                             RecognitionHistoryEmptyState(
-                                iconRes = R.drawable.solar_earth,
+                                iconRes = R.drawable.solar_global,
                                 title = stringResource(R.string.music_recognition_history_no_results_title),
                                 body = stringResource(R.string.music_recognition_history_no_results_body),
                             )
@@ -1191,7 +1191,7 @@ private fun ResultFirstSheet(
 
                         if (metadata.isNotBlank()) {
                             Spacer(modifier = Modifier.height(10.dp))
-                            StatusPill(label = metadata, iconRes = R.drawable.solar_inbox)
+                            StatusPill(label = metadata, iconRes = R.drawable.solar_info_circle)
                         }
                     }
                 }
@@ -1253,7 +1253,7 @@ private fun ResultDetailSections(result: RecognitionResult) {
     if (!lyrics.isNullOrBlank()) {
         Spacer(modifier = Modifier.height(16.dp))
         ResultInfoBlock(
-            iconRes = R.drawable.solar_layers,
+            iconRes = R.drawable.solar_document_text,
             title = stringResource(R.string.music_recognition_lyrics_preview),
             body = lyrics,
             maxLines = 6,
@@ -1263,7 +1263,7 @@ private fun ResultDetailSections(result: RecognitionResult) {
     if (label != null) {
         Spacer(modifier = Modifier.height(12.dp))
         ResultInfoBlock(
-            iconRes = R.drawable.solar_inbox,
+            iconRes = R.drawable.solar_info_circle,
             title = label,
             body = label,
             maxLines = 1,
@@ -1661,7 +1661,7 @@ private fun FlowChips(
         remember(album, genre, releaseDate, isrc) {
             buildList {
                 album?.takeIf { it.isNotBlank() }?.let { add(ChipData(R.drawable.solar_album, it)) }
-                genre?.takeIf { it.isNotBlank() }?.let { add(ChipData(R.drawable.solar_inbox, it)) }
+                genre?.takeIf { it.isNotBlank() }?.let { add(ChipData(R.drawable.solar_info_circle, it)) }
                 releaseDate?.takeIf { it.isNotBlank() }?.let { add(ChipData(R.drawable.solar_calendar_date, it)) }
                 isrc?.takeIf { it.isNotBlank() }?.let { add(ChipData(R.drawable.solar_link, it)) }
             }

@@ -2473,7 +2473,7 @@ private fun LittlePlayerContent(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_export),
+                    painter = painterResource(R.drawable.solar_code),
                     contentDescription = null,
                     tint = textColor.copy(alpha = 0.8f),
                     modifier =

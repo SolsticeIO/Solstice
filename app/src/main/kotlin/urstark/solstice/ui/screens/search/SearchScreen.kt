@@ -282,7 +282,7 @@ private fun SearchEntryField(
                 },
                 trailingIcon = {
                     Icon(
-                        painter = painterResource(R.drawable.solar_planet),
+                        painter = painterResource(R.drawable.solar_folder),
                         contentDescription = null,
                     )
                 },
@@ -686,7 +686,7 @@ private fun SearchStateMessage(
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Icon(
-                painter = painterResource(R.drawable.solar_earth),
+                painter = painterResource(R.drawable.solar_global),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.outline,
             )

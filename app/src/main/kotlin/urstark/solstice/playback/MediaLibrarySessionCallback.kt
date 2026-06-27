@@ -485,7 +485,7 @@ class MediaLibrarySessionCallback
                                     MusicService.HOME_MIXES_AND_RADIOS,
                                     context.getString(R.string.android_auto_mixes_and_radios),
                                     null,
-                                    drawableUri(R.drawable.solar_radio),
+                                    drawableUri(R.drawable.solar_magic_stick_3),
                                     MediaMetadata.MEDIA_TYPE_FOLDER_PLAYLISTS,
                                 ),
                             )
@@ -768,7 +768,7 @@ class MediaLibrarySessionCallback
                                 MusicService.HOME_MIXES_AND_RADIOS,
                                 context.getString(R.string.android_auto_mixes_and_radios),
                                 null,
-                                drawableUri(R.drawable.solar_radio),
+                                drawableUri(R.drawable.solar_magic_stick_3),
                                 MediaMetadata.MEDIA_TYPE_FOLDER_PLAYLISTS,
                             ),
                             null,

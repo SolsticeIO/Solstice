@@ -959,7 +959,7 @@ private fun UpdateSummaryCard(
             ) {
                 Box(modifier = Modifier.padding(top = 2.dp)) {
                     FeatureIcon(
-                        iconRes = R.drawable.solar_plate,
+                        iconRes = R.drawable.solar_cloud_download,
                         containerColor = statusContainerColor,
                         contentColor = statusContentColor,
                     )
@@ -1039,7 +1039,7 @@ private fun UpdateActionPanel(
                         .heightIn(min = 48.dp),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_plate),
+                    painter = painterResource(R.drawable.solar_cloud_download),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp),
                 )
@@ -1310,7 +1310,7 @@ private fun CommitHistorySection(
                 },
                 trailingContent = {
                     Icon(
-                        painter = painterResource(R.drawable.solar_export),
+                        painter = painterResource(R.drawable.solar_code),
                         contentDescription = null,
                         modifier = Modifier.rotate(rotationAngle),
                     )

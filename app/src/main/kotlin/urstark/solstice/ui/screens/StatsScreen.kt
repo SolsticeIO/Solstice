@@ -669,7 +669,7 @@ fun StatsScreen(
                     onLongClick = {},
                 ) {
                     Icon(
-                        painterResource(R.drawable.solar_atom),
+                        painterResource(R.drawable.solar_link_circle),
                         contentDescription = stringResource(R.string.year_in_music),
                     )
                 }

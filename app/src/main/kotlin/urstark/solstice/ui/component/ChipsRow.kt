@@ -156,7 +156,7 @@ fun <Int> ChoiceChipsRow(
                 },
                 trailingIcon = {
                     Icon(
-                        painter = painterResource(R.drawable.solar_export),
+                        painter = painterResource(R.drawable.solar_code),
                         contentDescription = null,
                         modifier = Modifier.graphicsLayer(rotationZ = rotationAnimation),
                     )

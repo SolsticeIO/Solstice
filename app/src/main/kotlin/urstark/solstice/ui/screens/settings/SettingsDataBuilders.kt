@@ -39,7 +39,7 @@ fun buildSettingsGroups(
                     listOf(
                         SettingsItem(
                             key = "account",
-                            icon = painterResource(R.drawable.solar_route),
+                            icon = painterResource(R.drawable.solar_user),
                             title = stringResource(R.string.account),
                             subtitle = stringResource(R.string.settings_account_subtitle),
                             accentColor = MaterialTheme.colorScheme.primary,
@@ -47,7 +47,7 @@ fun buildSettingsGroups(
                         ),
                         SettingsItem(
                             key = "stats",
-                            icon = painterResource(R.drawable.solar_stars),
+                            icon = painterResource(R.drawable.solar_chart),
                             title = stringResource(R.string.settings_stats_title),
                             subtitle = stringResource(R.string.settings_stats_subtitle),
                             accentColor = MaterialTheme.colorScheme.primary,
@@ -71,7 +71,7 @@ fun buildSettingsGroups(
                         ),
                         SettingsItem(
                             key = "behavior",
-                            icon = painterResource(R.drawable.solar_siren),
+                            icon = painterResource(R.drawable.solar_shield),
                             title = stringResource(R.string.settings_behavior_title),
                             subtitle = stringResource(R.string.settings_behavior_subtitle),
                             accentColor = MaterialTheme.colorScheme.primary,
@@ -79,7 +79,7 @@ fun buildSettingsGroups(
                         ),
                         SettingsItem(
                             key = "lyrics",
-                            icon = painterResource(R.drawable.solar_layers),
+                            icon = painterResource(R.drawable.solar_document_text),
                             title = stringResource(R.string.lyrics),
                             subtitle = stringResource(R.string.settings_lyrics_subtitle),
                             accentColor = MaterialTheme.colorScheme.secondary,
@@ -87,7 +87,7 @@ fun buildSettingsGroups(
                         ),
                         SettingsItem(
                             key = "integration",
-                            icon = painterResource(R.drawable.solar_atom),
+                            icon = painterResource(R.drawable.solar_link_round),
                             title = stringResource(R.string.integration),
                             subtitle = stringResource(R.string.settings_integration_subtitle),
                             accentColor = MaterialTheme.colorScheme.secondary,
@@ -95,7 +95,7 @@ fun buildSettingsGroups(
                         ),
                         SettingsItem(
                             key = "ai_integration",
-                            icon = painterResource(R.drawable.solar_radio),
+                            icon = painterResource(R.drawable.solar_chart),
                             title = stringResource(R.string.ai_integration),
                             subtitle = stringResource(R.string.ai_integration_desc),
                             accentColor = MaterialTheme.colorScheme.secondary,
@@ -103,7 +103,7 @@ fun buildSettingsGroups(
                         ),
                         SettingsItem(
                             key = "backup_restore",
-                            icon = painterResource(R.drawable.solar_cup),
+                            icon = painterResource(R.drawable.solar_cloud_upload),
                             title = stringResource(R.string.backup_restore),
                             subtitle = stringResource(R.string.settings_backup_restore_subtitle),
                             accentColor = MaterialTheme.colorScheme.primary,
@@ -121,7 +121,7 @@ fun buildSettingsGroups(
                         add(
                             SettingsItem(
                                 key = "content",
-                                icon = painterResource(R.drawable.solar_planet),
+                                icon = painterResource(R.drawable.solar_folder),
                                 title = stringResource(R.string.content),
                                 subtitle = stringResource(R.string.settings_content_subtitle),
                                 accentColor = MaterialTheme.colorScheme.primary,
@@ -141,7 +141,7 @@ fun buildSettingsGroups(
                         add(
                             SettingsItem(
                                 key = "po_token",
-                                icon = painterResource(R.drawable.solar_women),
+                                icon = painterResource(R.drawable.solar_key),
                                 title = stringResource(R.string.po_token_generation),
                                 subtitle = stringResource(R.string.settings_po_token_subtitle),
                                 accentColor = MaterialTheme.colorScheme.secondary,
@@ -151,7 +151,7 @@ fun buildSettingsGroups(
                         add(
                             SettingsItem(
                                 key = "storage",
-                                icon = painterResource(R.drawable.solar_tag),
+                                icon = painterResource(R.drawable.solar_database),
                                 title = stringResource(R.string.storage),
                                 subtitle = stringResource(R.string.settings_storage_subtitle),
                                 accentColor = MaterialTheme.colorScheme.primary,
@@ -161,7 +161,7 @@ fun buildSettingsGroups(
                         add(
                             SettingsItem(
                                 key = "developer_options",
-                                icon = painterResource(R.drawable.solar_export),
+                                icon = painterResource(R.drawable.solar_code),
                                 title = stringResource(R.string.settings_developer_options_title),
                                 subtitle = stringResource(R.string.settings_developer_options_subtitle),
                                 accentColor = MaterialTheme.colorScheme.tertiary,
@@ -216,7 +216,7 @@ fun buildSettingsGroups(
                             add(
                                 SettingsItem(
                                     key = "updates",
-                                    icon = painterResource(R.drawable.solar_plate),
+                                    icon = painterResource(R.drawable.solar_cloud_download),
                                     title = stringResource(R.string.updates),
                                     subtitle =
                                         if (hasUpdate) {
@@ -239,7 +239,7 @@ fun buildSettingsGroups(
                         add(
                             SettingsItem(
                                 key = "about",
-                                icon = painterResource(R.drawable.solar_inbox),
+                                icon = painterResource(R.drawable.solar_info_circle),
                                 title = stringResource(R.string.about),
                                 subtitle = stringResource(R.string.settings_about_subtitle),
                                 accentColor = MaterialTheme.colorScheme.secondary,

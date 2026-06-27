@@ -552,7 +552,7 @@ fun LibraryMixScreen(
                                         contentAlignment = Alignment.Center,
                                     ) {
                                         Icon(
-                                            painter = painterResource(id = R.drawable.solar_export),
+                                            painter = painterResource(id = R.drawable.solar_code),
                                             contentDescription = stringResource(R.string.more_playlists_desc),
                                             tint = MaterialTheme.colorScheme.onSurfaceVariant,
                                             modifier = Modifier.size(24.dp),

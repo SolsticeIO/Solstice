@@ -354,7 +354,7 @@ fun StorageSettings(
                             },
                         icon = {
                             Icon(
-                                painter = painterResource(R.drawable.solar_cup_music),
+                                painter = painterResource(R.drawable.solar_cloud_upload),
                                 contentDescription = null,
                             )
                         },
@@ -420,7 +420,7 @@ fun StorageSettings(
                             },
                         icon = {
                             Icon(
-                                painter = painterResource(R.drawable.solar_magnet),
+                                painter = painterResource(R.drawable.solar_link_round),
                                 contentDescription = null,
                             )
                         },
@@ -853,7 +853,7 @@ private fun StorageLocationOptionRow(
             modifier = Modifier.padding(horizontal = 8.dp, vertical = 18.dp),
         ) {
             Icon(
-                painter = painterResource(R.drawable.solar_tag),
+                painter = painterResource(R.drawable.solar_database),
                 contentDescription = null,
                 modifier = Modifier.size(28.dp),
             )

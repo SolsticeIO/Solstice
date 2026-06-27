@@ -222,7 +222,7 @@ private fun RestoreOptionsDialog(
             val iconRes =
                 when (category) {
                     BackupCategory.LIBRARY -> R.drawable.solar_music_library_2
-                    BackupCategory.ACCOUNT -> R.drawable.solar_route
+                    BackupCategory.ACCOUNT -> R.drawable.solar_user
                     BackupCategory.SETTINGS -> R.drawable.solar_settings
                 }
             Surface(

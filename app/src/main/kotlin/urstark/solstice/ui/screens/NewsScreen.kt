@@ -825,7 +825,7 @@ private fun NewsErrorState(
     modifier: Modifier = Modifier,
 ) {
     NewsStatePanel(
-        icon = R.drawable.solar_inbox,
+        icon = R.drawable.solar_info_circle,
         title = stringResource(R.string.news_error_title),
         description = stringResource(R.string.news_error_desc),
         iconColor = MaterialTheme.colorScheme.error,

@@ -1847,7 +1847,7 @@ class MainActivity : ComponentActivity() {
                                                                     painterResource(
                                                                         when (searchSource) {
                                                                             SearchSource.LOCAL -> R.drawable.solar_music_library_2
-                                                                            SearchSource.ONLINE -> R.drawable.solar_planet
+                                                                            SearchSource.ONLINE -> R.drawable.solar_folder
                                                                         },
                                                                     ),
                                                                 contentDescription = null,

@@ -636,7 +636,7 @@ fun PlaylistMenu(
                             headlineContent = { Text(text = startRadioText) },
                             leadingContent = {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_radio),
+                                    painter = painterResource(R.drawable.solar_magic_stick_3),
                                     contentDescription = null,
                                 )
                             },

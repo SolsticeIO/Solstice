@@ -236,7 +236,7 @@ fun BackupAndRestore(
                     PreferenceEntry(
                         title = { Text(stringResource(R.string.action_backup)) },
                         description = stringResource(R.string.backup_create_backup_desc),
-                        icon = { Icon(painterResource(R.drawable.solar_cup), null) },
+                        icon = { Icon(painterResource(R.drawable.solar_cloud_upload), null) },
                         onClick = { showBackupOptionsDialog = true },
                     )
                 }
@@ -984,7 +984,7 @@ private fun BackupOptionsDialog(
             val iconRes =
                 when (category) {
                     BackupCategory.LIBRARY -> R.drawable.solar_music_library_2
-                    BackupCategory.ACCOUNT -> R.drawable.solar_route
+                    BackupCategory.ACCOUNT -> R.drawable.solar_user
                     BackupCategory.SETTINGS -> R.drawable.solar_settings
                 }
             Surface(

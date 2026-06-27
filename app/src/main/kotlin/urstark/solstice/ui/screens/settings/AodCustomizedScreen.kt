@@ -316,7 +316,7 @@ fun AodCustomizedScreen(
                     item {
                         SwitchPreference(
                             title = { Text(stringResource(R.string.aod_customize_show_thumbnail)) },
-                            icon = { Icon(painterResource(R.drawable.solar_magnet), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_link_round), null) },
                             checked = showThumbnail,
                             onCheckedChange = onShowThumbnailChange,
                         )
@@ -393,7 +393,7 @@ fun AodCustomizedScreen(
                     item {
                         EnumListPreference(
                             title = { Text(stringResource(R.string.aod_customize_background_style)) },
-                            icon = { Icon(painterResource(R.drawable.solar_radio), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_magic_stick_3), null) },
                             selectedValue = backgroundStyle,
                             valueText = { it.label() },
                             onValueSelected = onBackgroundStyleChange,
@@ -446,7 +446,7 @@ fun AodCustomizedScreen(
                     item {
                         AodSliderPreference(
                             title = stringResource(R.string.aod_customize_thumbnail_size),
-                            icon = { Icon(painterResource(R.drawable.solar_magnet), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_link_round), null) },
                             value = thumbnailSize,
                             valueRange = 160f..340f,
                             steps = 35,
@@ -490,7 +490,7 @@ fun AodCustomizedScreen(
                     item {
                         AodSliderPreference(
                             title = stringResource(R.string.aod_customize_ambient_intensity),
-                            icon = { Icon(painterResource(R.drawable.solar_euro), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_settings), null) },
                             value = ambientIntensity,
                             valueRange = 0f..1f,
                             steps = 20,
@@ -501,7 +501,7 @@ fun AodCustomizedScreen(
                     item {
                         SwitchPreference(
                             title = { Text(stringResource(R.string.aod_customize_artwork_glow)) },
-                            icon = { Icon(painterResource(R.drawable.solar_atom), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_link_circle), null) },
                             checked = artworkGlow,
                             onCheckedChange = onArtworkGlowChange,
                         )

@@ -274,7 +274,7 @@ private fun LastFmSettingsSuccess(
             PreferenceEntry(
                 title = { Text(stringResource(R.string.lastfm_service_provider)) },
                 description = "$providerName\n$endpointDescription",
-                icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                icon = { Icon(painterResource(R.drawable.solar_key), null) },
                 onClick = onOpenServiceEditor,
             )
         }
@@ -288,7 +288,7 @@ private fun LastFmSettingsSuccess(
                     } else {
                         stringResource(R.string.lastfm_api_credentials_custom)
                     },
-                icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                icon = { Icon(painterResource(R.drawable.solar_key), null) },
                 onClick = onOpenServiceEditor,
             )
         }
@@ -304,7 +304,7 @@ private fun LastFmSettingsSuccess(
                     )
                 },
                 description = null,
-                icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                icon = { Icon(painterResource(R.drawable.solar_key), null) },
                 trailingContent = {
                     if (model.isLoggedIn) {
                         OutlinedButton(onClick = onLogout, shapes = ButtonDefaults.shapes()) {

@@ -190,7 +190,7 @@ fun LocalSearchScreen(
                             )
 
                             Icon(
-                                painter = painterResource(R.drawable.solar_magnet),
+                                painter = painterResource(R.drawable.solar_link_round),
                                 contentDescription = null,
                                 tint =
                                     if (pureBlack) {

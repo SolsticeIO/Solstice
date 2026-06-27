@@ -77,7 +77,7 @@ fun ContentSettings(navController: NavController) {
             item {
                 ListPreference(
                     title = { Text(stringResource(R.string.content_language)) },
-                    icon = { Icon(painterResource(R.drawable.solar_planet), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_folder), null) },
                     selectedValue = contentLanguage,
                     values = listOf(SYSTEM_DEFAULT) + LanguageCodeToName.keys.toList(),
                     valueText = {
@@ -172,7 +172,7 @@ fun ContentSettings(navController: NavController) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                     PreferenceEntry(
                         title = { Text(stringResource(R.string.app_language)) },
-                        icon = { Icon(painterResource(R.drawable.solar_planet), null) },
+                        icon = { Icon(painterResource(R.drawable.solar_folder), null) },
                         onClick = {
                             context.startActivity(
                                 Intent(
@@ -185,7 +185,7 @@ fun ContentSettings(navController: NavController) {
                 } else {
                     ListPreference(
                         title = { Text(stringResource(R.string.app_language)) },
-                        icon = { Icon(painterResource(R.drawable.solar_planet), null) },
+                        icon = { Icon(painterResource(R.drawable.solar_folder), null) },
                         selectedValue = appLanguage,
                         values = listOf(SYSTEM_DEFAULT) + LanguageCodeToName.keys.toList(),
                         valueText = {

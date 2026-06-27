@@ -134,7 +134,7 @@ fun SettingsProfileHeader(
                     Icon(
                         painter =
                             painterResource(
-                                if (state.isLoggedIn) R.drawable.solar_route else R.drawable.solar_login,
+                                if (state.isLoggedIn) R.drawable.solar_user else R.drawable.solar_login,
                             ),
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onPrimaryContainer,
@@ -166,7 +166,7 @@ fun SettingsProfileHeader(
             }
 
             Icon(
-                painter = painterResource(R.drawable.solar_magnet),
+                painter = painterResource(R.drawable.solar_link_round),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.5f),
                 modifier = Modifier.size(SettingsDimensions.ChevronSize),
@@ -306,7 +306,7 @@ fun SettingsUpdateBanner(
                 contentAlignment = Alignment.Center,
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_plate),
+                    painter = painterResource(R.drawable.solar_cloud_download),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onPrimaryContainer,
                     modifier = Modifier.size(SettingsDimensions.BannerIconInnerSize),
@@ -508,7 +508,7 @@ fun SettingsRow(
             Spacer(modifier = Modifier.width(4.dp))
 
             Icon(
-                painter = painterResource(R.drawable.solar_magnet),
+                painter = painterResource(R.drawable.solar_link_round),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f),
                 modifier = Modifier.size(SettingsDimensions.ChevronSize),

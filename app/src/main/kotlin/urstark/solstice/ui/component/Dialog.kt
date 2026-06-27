@@ -319,7 +319,7 @@ fun InfoLabel(text: String) =
         modifier = Modifier.padding(horizontal = 8.dp),
     ) {
         Icon(
-            painter = painterResource(id = R.drawable.solar_inbox),
+            painter = painterResource(id = R.drawable.solar_info_circle),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.secondary,
             modifier = Modifier.padding(4.dp),

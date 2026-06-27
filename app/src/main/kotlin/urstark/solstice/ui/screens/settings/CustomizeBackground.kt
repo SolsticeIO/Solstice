@@ -168,7 +168,7 @@ fun CustomizeBackground(navController: NavController) {
                     )
                 } else {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Icon(painterResource(R.drawable.solar_magnet), contentDescription = null)
+                        Icon(painterResource(R.drawable.solar_link_round), contentDescription = null)
                         Text(stringResource(R.string.add_image))
                     }
                 }
@@ -233,7 +233,7 @@ fun CustomizeBackground(navController: NavController) {
                     )
                 } else {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Icon(painterResource(R.drawable.solar_magnet), contentDescription = null)
+                        Icon(painterResource(R.drawable.solar_link_round), contentDescription = null)
                         Text(stringResource(R.string.add_image))
                     }
                 }

@@ -123,7 +123,7 @@ fun LyricsAnimationSettings(
                     PreferenceEntry(
                         title = { Text("Glow Intensity") },
                         description = "Adjust the glow brightness of the sung word (${(glowFactor * 100).toInt()}%)",
-                        icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                        icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                         content = {
                             Slider(
                                 value = glowFactor,
@@ -138,7 +138,7 @@ fun LyricsAnimationSettings(
                     PreferenceEntry(
                         title = { Text("Fill Transition Smoothness") },
                         description = "Adjust the gradient edge width of the liquid fill effect (${fillTransitionWidth.toInt()} dp)",
-                        icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                        icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                         content = {
                             Slider(
                                 value = fillTransitionWidth,

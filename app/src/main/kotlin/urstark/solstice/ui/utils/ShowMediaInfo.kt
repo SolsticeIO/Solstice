@@ -235,7 +235,7 @@ fun ShowMediaInfo(videoId: String) {
                 ?.let {
                     add(
                         MediaInfoQuickFact(
-                            iconRes = R.drawable.solar_tag,
+                            iconRes = R.drawable.solar_database,
                             text = Formatter.formatShortFileSize(context, it),
                         ),
                     )

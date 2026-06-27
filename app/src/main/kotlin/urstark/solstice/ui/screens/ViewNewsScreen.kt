@@ -511,7 +511,7 @@ private fun ViewNewsErrorState(
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_inbox),
+                            painter = painterResource(R.drawable.solar_info_circle),
                             contentDescription = null,
                             modifier = Modifier.size(44.dp),
                         )

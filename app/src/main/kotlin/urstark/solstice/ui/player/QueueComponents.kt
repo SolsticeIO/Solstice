@@ -683,7 +683,7 @@ fun QueueCollapsedContentV2(
                 contentAlignment = Alignment.Center,
             ) {
                 Icon(
-                    painter = painterResource(id = R.drawable.solar_layers),
+                    painter = painterResource(id = R.drawable.solar_document_text),
                     contentDescription = null,
                     modifier = Modifier.size(iconSize),
                     tint = textBackgroundColor,
@@ -882,7 +882,7 @@ fun QueueCollapsedContentV3(
                     horizontalArrangement = Arrangement.spacedBy(6.dp),
                 ) {
                     Icon(
-                        painter = painterResource(id = R.drawable.solar_layers),
+                        painter = painterResource(id = R.drawable.solar_document_text),
                         contentDescription = null,
                         modifier = Modifier.size(18.dp),
                         tint = textBackgroundColor.copy(alpha = 0.7f),
@@ -1040,7 +1040,7 @@ fun QueueCollapsedContentV1(
                     modifier = Modifier.fillMaxWidth(),
                 ) {
                     Icon(
-                        painter = painterResource(id = R.drawable.solar_layers),
+                        painter = painterResource(id = R.drawable.solar_document_text),
                         contentDescription = null,
                         modifier = Modifier.size(20.dp),
                         tint = textBackgroundColor,
@@ -1204,7 +1204,7 @@ fun QueueCollapsedContentV4(
                     modifier = Modifier.fillMaxSize(),
                 ) {
                     Icon(
-                        painter = painterResource(id = R.drawable.solar_layers),
+                        painter = painterResource(id = R.drawable.solar_document_text),
                         contentDescription = null,
                         modifier = Modifier.size(iconSize),
                         tint = textBackgroundColor,
@@ -1299,7 +1299,7 @@ fun QueueCollapsedContentV7(
                         contentAlignment = Alignment.Center,
                     ) {
                         Icon(
-                            painter = painterResource(id = R.drawable.solar_layers),
+                            painter = painterResource(id = R.drawable.solar_document_text),
                             contentDescription = null,
                             modifier = Modifier.size(iconSize),
                             tint = textBackgroundColor,

@@ -564,7 +564,7 @@ private fun EmptyRecapCard(
         applySafeContentInsets = applySafeContentInsets,
     ) {
         IconBadge(
-            icon = R.drawable.solar_stars,
+            icon = R.drawable.solar_chart,
             background = RecapRed,
             tint = RecapCream,
             modifier = Modifier.size(78.dp),

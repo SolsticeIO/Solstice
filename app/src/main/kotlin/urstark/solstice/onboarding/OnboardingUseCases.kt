@@ -98,7 +98,7 @@ class BuildOnboardingUiStateUseCase
         private fun OnboardingPermissionId.iconResId(): Int =
             when (this) {
                 OnboardingPermissionId.NOTIFICATIONS -> R.drawable.solar_music_note
-                OnboardingPermissionId.LOCAL_AUDIO -> R.drawable.solar_tag
+                OnboardingPermissionId.LOCAL_AUDIO -> R.drawable.solar_database
                 OnboardingPermissionId.MICROPHONE -> R.drawable.solar_cosmetic
                 OnboardingPermissionId.BLUETOOTH_CONNECT -> R.drawable.solar_bluetooth
                 OnboardingPermissionId.NETWORK -> R.drawable.solar_wi_fi_router

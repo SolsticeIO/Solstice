@@ -154,7 +154,7 @@ fun SpeedDialGridItem(
 
                 if (item !is SongItem) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_magnet),
+                        painter = painterResource(R.drawable.solar_link_round),
                         contentDescription = null,
                         tint = foregroundColor,
                         modifier = Modifier.size(24.dp),

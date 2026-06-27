@@ -1143,7 +1143,7 @@ private fun SettingsRow(
         trailingContent = {
             if (onClick != null) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_magnet),
+                    painter = painterResource(R.drawable.solar_link_round),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                 )

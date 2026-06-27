@@ -309,7 +309,7 @@ fun PoTokenScreen(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.web_client_po_token)) },
                     description = stringResource(R.string.web_client_po_token_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_key), null) },
                     checked = webClientPoTokenEnabled,
                     onCheckedChange = onWebClientPoTokenEnabledChange,
                 )

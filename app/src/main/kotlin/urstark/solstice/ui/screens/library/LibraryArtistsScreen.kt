@@ -408,7 +408,7 @@ fun LibraryArtistsScreen(
                                 )
                                 Spacer(modifier = Modifier.width(6.dp))
                                 Icon(
-                                    painter = painterResource(id = R.drawable.solar_export),
+                                    painter = painterResource(id = R.drawable.solar_code),
                                     contentDescription = null,
                                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                                     modifier = Modifier.size(16.dp),

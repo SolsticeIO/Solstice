@@ -760,7 +760,7 @@ fun ArtistScreen(
                                             ),
                                     ) {
                                         Icon(
-                                            painter = painterResource(R.drawable.solar_radio),
+                                            painter = painterResource(R.drawable.solar_magic_stick_3),
                                             contentDescription = null,
                                             modifier = Modifier.size(18.dp),
                                         )
@@ -1142,7 +1142,7 @@ fun ArtistScreen(
         HideOnScrollFAB(
             visible = librarySongs.isNotEmpty() && libraryArtist?.artist?.isLocal != true,
             lazyListState = lazyListState,
-            icon = if (showLocal) R.drawable.solar_planet else R.drawable.solar_music_library_2,
+            icon = if (showLocal) R.drawable.solar_folder else R.drawable.solar_music_library_2,
             label = if (showLocal) stringResource(R.string.together_online) else stringResource(R.string.filter_library),
             onClick = {
                 showLocal = showLocal.not()

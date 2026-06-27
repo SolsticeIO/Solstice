@@ -193,7 +193,7 @@ fun PrivacySettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.pause_search_history)) },
-                    icon = { Icon(painterResource(R.drawable.solar_earth), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_global), null) },
                     checked = pauseSearchHistory,
                     onCheckedChange = onPauseSearchHistoryChange,
                 )

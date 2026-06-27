@@ -3185,7 +3185,7 @@ class MusicService :
                     CommandButton
                         .Builder()
                         .setDisplayName(getString(R.string.start_radio))
-                        .setIconResId(R.drawable.solar_radio)
+                        .setIconResId(R.drawable.solar_magic_stick_3)
                         .setSessionCommand(CommandToggleStartRadio)
                         .setEnabled(currentSong.value != null)
                         .build(),

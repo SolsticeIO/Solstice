@@ -439,7 +439,7 @@ fun SongMenu(
                         NewAction(
                             icon = {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_radio),
+                                    painter = painterResource(R.drawable.solar_magic_stick_3),
                                     contentDescription = null,
                                     modifier = Modifier.size(28.dp),
                                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -1006,7 +1006,7 @@ fun SongMenu(
                         headlineContent = { Text(text = stringResource(R.string.details)) },
                         leadingContent = {
                             Icon(
-                                painter = painterResource(R.drawable.solar_inbox),
+                                painter = painterResource(R.drawable.solar_info_circle),
                                 contentDescription = null,
                             )
                         },

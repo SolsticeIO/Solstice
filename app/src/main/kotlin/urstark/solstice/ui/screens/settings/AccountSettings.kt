@@ -320,7 +320,7 @@ fun AccountSettings(
                         border = null,
                     ) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_women),
+                            painter = painterResource(R.drawable.solar_key),
                             contentDescription = null,
                             modifier = Modifier.size(20.dp),
                         )
@@ -342,7 +342,7 @@ fun AccountSettings(
                                 border = null,
                             ) {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_plate),
+                                    painter = painterResource(R.drawable.solar_cloud_download),
                                     contentDescription = null,
                                     modifier = Modifier.size(20.dp),
                                 )
@@ -501,7 +501,7 @@ fun AccountSettings(
                     ExpressiveDivider()
 
                     ExpressiveActionRow(
-                        icon = painterResource(R.drawable.solar_women),
+                        icon = painterResource(R.drawable.solar_key),
                         title = tokenActionTitle,
                         subtitle = tokenDescription,
                         accent = if (isLoggedIn && showToken) MaterialTheme.colorScheme.tertiary else null,
@@ -716,7 +716,7 @@ private fun ProfileIdentityCard(
                         Icon(
                             painter =
                                 painterResource(
-                                    if (isLoggedIn) R.drawable.solar_route else R.drawable.solar_login,
+                                    if (isLoggedIn) R.drawable.solar_user else R.drawable.solar_login,
                                 ),
                             contentDescription = null,
                             modifier = Modifier.size(38.dp),
@@ -840,7 +840,7 @@ private fun ProfileIdentityCard(
                                 Icon(
                                     painter =
                                         painterResource(
-                                            if (isLoggedIn) R.drawable.solar_route else R.drawable.solar_login,
+                                            if (isLoggedIn) R.drawable.solar_user else R.drawable.solar_login,
                                         ),
                                     contentDescription = null,
                                     modifier = Modifier.size(18.dp),
@@ -869,7 +869,7 @@ private fun ProfileIdentityCard(
                                     ),
                             ) {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_export),
+                                    painter = painterResource(R.drawable.solar_code),
                                     contentDescription = null,
                                     modifier =
                                         Modifier
@@ -918,7 +918,7 @@ private fun ProfileIdentityCard(
                                     },
                                     leadingIcon = {
                                         Icon(
-                                            painter = painterResource(R.drawable.solar_route),
+                                            painter = painterResource(R.drawable.solar_user),
                                             contentDescription = null,
                                             tint =
                                                 if (isActive) {
@@ -983,7 +983,7 @@ private fun ProfileIdentityCard(
                                     },
                                     leadingIcon = {
                                         Icon(
-                                            painter = painterResource(R.drawable.solar_route),
+                                            painter = painterResource(R.drawable.solar_user),
                                             contentDescription = null,
                                             tint =
                                                 if (isActive) {
@@ -1120,7 +1120,7 @@ private fun UpdateBannerStrip(
                 ) {
                     Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_plate),
+                            painter = painterResource(R.drawable.solar_cloud_download),
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.onTertiaryContainer,
                             modifier = Modifier.size(22.dp),

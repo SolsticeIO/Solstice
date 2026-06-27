@@ -890,7 +890,7 @@ private fun LocalSongScanSheet(
             ) {
                 Column(modifier = Modifier.padding(vertical = 6.dp)) {
                     ScanSheetInfoRow(
-                        iconRes = R.drawable.solar_tag,
+                        iconRes = R.drawable.solar_database,
                         title = stringResource(R.string.permission_storage_title),
                         description = stringResource(R.string.permission_storage_desc),
                         trailing = {
@@ -949,7 +949,7 @@ private fun LocalSongScanSheet(
                     )
 
                     ScanSheetInfoRow(
-                        iconRes = R.drawable.solar_inbox,
+                        iconRes = R.drawable.solar_info_circle,
                         title = stringResource(R.string.local_songs_latest_scan),
                         description = statusText,
                         trailing = null,

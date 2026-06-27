@@ -427,7 +427,7 @@ fun DiscordSettings(
                             },
                             leadingIcon = {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_export),
+                                    painter = painterResource(R.drawable.solar_code),
                                     contentDescription = null,
                                 )
                             },
@@ -492,7 +492,7 @@ fun DiscordSettings(
                         PreferenceEntry(
                             title = { Text(stringResource(R.string.refresh)) },
                             description = stringResource(R.string.description_refresh),
-                            icon = { Icon(painterResource(R.drawable.solar_plate), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_cloud_download), null) },
                             isEnabled = discordRPC && isLoggedIn,
                             trailingContent = {
                                 if (isRefreshing) {
@@ -534,7 +534,7 @@ fun DiscordSettings(
                     item {
                         ListPreference(
                             title = { Text(stringResource(R.string.activity_status)) },
-                            icon = { Icon(painterResource(R.drawable.solar_stars), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_chart), null) },
                             selectedValue = activityStatusSelection,
                             values = DiscordActivityStatusOptions,
                             valueText = { discordPresenceStatusLabel(it) },
@@ -613,7 +613,7 @@ fun DiscordSettings(
                     item {
                         ListPreference(
                             title = { Text(stringResource(R.string.large_image)) },
-                            icon = { Icon(painterResource(R.drawable.solar_magnet), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_link_round), null) },
                             selectedValue = largeImageType,
                             values = DiscordImageOptions,
                             valueText = { discordImageTypeLabel(it) },
@@ -655,7 +655,7 @@ fun DiscordSettings(
                     item {
                         ListPreference(
                             title = { Text(stringResource(R.string.small_image)) },
-                            icon = { Icon(painterResource(R.drawable.solar_magnet), null) },
+                            icon = { Icon(painterResource(R.drawable.solar_link_round), null) },
                             selectedValue = smallImageType,
                             values = DiscordSmallImageOptions,
                             valueText = { discordImageTypeLabel(it) },
@@ -989,7 +989,7 @@ private fun DiscordAccountGroupCard(
                             contentAlignment = Alignment.Center,
                         ) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_stars),
+                                painter = painterResource(R.drawable.solar_chart),
                                 contentDescription = null,
                                 tint = MaterialTheme.colorScheme.primary,
                             )

@@ -362,7 +362,7 @@ private fun PlaybackErrorHeader(
                 color = MaterialTheme.colorScheme.onErrorContainer.copy(alpha = 0.10f),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_inbox),
+                    painter = painterResource(R.drawable.solar_info_circle),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onErrorContainer,
                     modifier =

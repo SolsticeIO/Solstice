@@ -225,7 +225,7 @@ fun LyricsMenu(
         DefaultDialog(
             onDismiss = { showAiTranslateDialog = false },
             icon = {
-                Icon(painter = painterResource(R.drawable.solar_atom), contentDescription = null)
+                Icon(painter = painterResource(R.drawable.solar_link_circle), contentDescription = null)
             },
             title = { Text(stringResource(R.string.ai_translation_menu)) },
             buttons = {
@@ -633,7 +633,7 @@ fun LyricsMenu(
                             NewAction(
                                 icon = {
                                     Icon(
-                                        painter = painterResource(R.drawable.solar_atom),
+                                        painter = painterResource(R.drawable.solar_link_circle),
                                         contentDescription = null,
                                         modifier = Modifier.size(28.dp),
                                         tint = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -957,7 +957,7 @@ private fun LyricsSearchResultItem(
                     Icon(
                         painter =
                             painterResource(
-                                if (isExpanded) R.drawable.solar_ladle else R.drawable.solar_export,
+                                if (isExpanded) R.drawable.solar_ladle else R.drawable.solar_code,
                             ),
                         contentDescription = stringResource(R.string.details),
                         tint = contentColor,
@@ -975,7 +975,7 @@ private fun LyricsSearchResultItem(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 LyricsSearchMetadataPill(
-                    icon = R.drawable.solar_inbox,
+                    icon = R.drawable.solar_info_circle,
                     text = lyricsType,
                     isExpanded = isExpanded,
                     modifier = Modifier.weight(1f),
@@ -998,7 +998,7 @@ private fun LyricsSearchTypeIcon(
 ) {
     val icon =
         when {
-            result.isWordSynced -> R.drawable.solar_layers
+            result.isWordSynced -> R.drawable.solar_document_text
             result.isLineSynced -> R.drawable.solar_sun
             else -> R.drawable.solar_align_left
         }
@@ -1137,7 +1137,7 @@ private fun LyricsSearchFooterLoading() {
 @Composable
 private fun LyricsSearchEmptyContent() {
     LyricsSearchMessageContent(
-        icon = R.drawable.solar_earth,
+        icon = R.drawable.solar_global,
         text = stringResource(R.string.lyrics_not_found),
         containerColor = MaterialTheme.colorScheme.errorContainer,
         contentColor = MaterialTheme.colorScheme.onErrorContainer,
@@ -1459,7 +1459,7 @@ private fun LyricsSearchInputActions(
                 modifier = Modifier.fillMaxWidth(),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_planet),
+                    painter = painterResource(R.drawable.solar_folder),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp),
                 )
@@ -1488,7 +1488,7 @@ private fun LyricsSearchInputActions(
                     ),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_planet),
+                    painter = painterResource(R.drawable.solar_folder),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp),
                 )

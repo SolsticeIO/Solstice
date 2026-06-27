@@ -399,7 +399,7 @@ fun AppearanceSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_dynamic_theme)) },
-                    icon = { Icon(painterResource(R.drawable.solar_palette), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_magic_stick_3), null) },
                     checked = dynamicTheme,
                     onCheckedChange = onDynamicThemeChange,
                 )
@@ -419,7 +419,7 @@ fun AppearanceSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.color_palette)) },
                     description = stringResource(R.string.customize_theme_colors),
-                    icon = { Icon(painterResource(R.drawable.solar_map_point), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_palette), null) },
                     onClick = { navController.navigate("settings/appearance/palette_picker") },
                 )
             }
@@ -427,7 +427,7 @@ fun AppearanceSettings(
             item {
                 EnumListPreference(
                     title = { Text(stringResource(R.string.dark_theme)) },
-                    icon = { Icon(painterResource(R.drawable.solar_sidebar_code), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_moon), null) },
                     selectedValue = darkMode,
                     onValueSelected = onDarkModeChange,
                     valueText = {
@@ -443,7 +443,7 @@ fun AppearanceSettings(
             item(visible = useDarkTheme) {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.pure_black)) },
-                    icon = { Icon(painterResource(R.drawable.solar_confetti), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_moon_sleep), null) },
                     checked = pureBlack,
                     onCheckedChange = onPureBlackChange,
                 )
@@ -453,7 +453,7 @@ fun AppearanceSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.disable_blur)) },
                     description = stringResource(R.string.disable_blur_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_bell_off), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_eye_closed), null) },
                     checked = disableBlur,
                     onCheckedChange = onDisableBlurChange,
                 )
@@ -473,7 +473,7 @@ fun AppearanceSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.blur_intensity)) },
                     description = stringResource(R.string.blur_intensity_value, blurRadius.roundToInt()),
-                    icon = { Icon(painterResource(R.drawable.solar_euro), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_tuning_4), null) },
                     isEnabled = !disableBlur,
                     content = {
                         Spacer(modifier = Modifier.height(10.dp))
@@ -493,7 +493,7 @@ fun AppearanceSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.album_backdrop)) },
                     description = stringResource(R.string.album_backdrop_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_euro), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_gallery), null) },
                     checked = backdropEnabled,
                     onCheckedChange = onBackdropEnabledChange,
                 )
@@ -503,7 +503,7 @@ fun AppearanceSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.backdrop_blur_amount)) },
                     description = stringResource(R.string.backdrop_blur_amount_value, backdropBlurAmount),
-                    icon = { Icon(painterResource(R.drawable.solar_euro), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_tuning_4), null) },
                     isEnabled = backdropEnabled,
                     content = {
                         Spacer(modifier = Modifier.height(10.dp))
@@ -586,7 +586,7 @@ fun AppearanceSettings(
                         } else {
                             stringResource(R.string.player_background_style_v8_v9_desc)
                         },
-                    icon = { Icon(painterResource(R.drawable.solar_radio), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_gallery), null) },
                     selectedValue = playerBackground,
                     onValueSelected = onPlayerBackgroundChange,
                     isEnabled = isPlayerStyleCustomizationEnabled,
@@ -608,7 +608,7 @@ fun AppearanceSettings(
             item(visible = playerBackground == PlayerBackgroundStyle.CUSTOM) {
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.customized_background)) },
-                    icon = { Icon(painterResource(R.drawable.solar_magnet), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_gallery_add), null) },
                     onClick = { navController.navigate("customize_background") },
                 )
             }
@@ -616,7 +616,7 @@ fun AppearanceSettings(
             item {
                 EnumListPreference(
                     title = { Text(stringResource(R.string.mini_player_background_style)) },
-                    icon = { Icon(painterResource(R.drawable.solar_radio), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_gallery), null) },
                     selectedValue = miniPlayerBackground,
                     onValueSelected = onMiniPlayerBackgroundChange,
                     valueText = {
@@ -633,7 +633,7 @@ fun AppearanceSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.hide_player_thumbnail)) },
                     description = stringResource(R.string.hide_player_thumbnail_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_home_angle), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_gallery_remove), null) },
                     checked = hidePlayerThumbnail,
                     onCheckedChange = onHidePlayerThumbnailChange,
                 )
@@ -643,7 +643,7 @@ fun AppearanceSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.solstice_canvas)) },
                     description = stringResource(R.string.solstice_canvas_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_microphone), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_magic_stick_3), null) },
                     checked = archiveTuneCanvasEnabled,
                     onCheckedChange = onSolsticeCanvasEnabledChange,
                 )
@@ -659,7 +659,7 @@ fun AppearanceSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.crop_thumbnail_to_square)) },
                     description = stringResource(R.string.crop_thumbnail_to_square_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_magnet), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_crop), null) },
                     checked = cropThumbnailToSquare,
                     onCheckedChange = onCropThumbnailToSquareChange,
                 )
@@ -700,7 +700,7 @@ fun AppearanceSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.player_slider_style)) },
                     description = sliderStyleLabel(sliderStyle),
-                    icon = { Icon(painterResource(R.drawable.solar_siderbar), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_slider_horizontal), null) },
                     onClick = {
                         showSliderOptionDialog = true
                     },
@@ -711,7 +711,7 @@ fun AppearanceSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_swipe_thumbnail)) },
-                    icon = { Icon(painterResource(R.drawable.solar_siren), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_routing), null) },
                     checked = swipeThumbnail,
                     onCheckedChange = onSwipeThumbnailChange,
                 )
@@ -789,7 +789,7 @@ fun AppearanceSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.swipe_sensitivity)) },
                     description = stringResource(R.string.sensitivity_percentage, (swipeSensitivity * 100).roundToInt()),
-                    icon = { Icon(painterResource(R.drawable.solar_sun), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_tuning_4), null) },
                     onClick = { showSensitivityDialog = true },
                 )
             }
@@ -799,7 +799,7 @@ fun AppearanceSettings(
             item {
                 EnumListPreference(
                     title = { Text(stringResource(R.string.quick_picks_display_mode)) },
-                    icon = { Icon(painterResource(R.drawable.solar_fridge), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_list), null) },
                     selectedValue = quickPicksDisplayMode,
                     onValueSelected = onQuickPicksDisplayModeChange,
                     valueText = {
@@ -814,7 +814,7 @@ fun AppearanceSettings(
             item {
                 EnumListPreference(
                     title = { Text(stringResource(R.string.default_open_tab)) },
-                    icon = { Icon(painterResource(R.drawable.solar_radar), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_user), null) },
                     selectedValue = defaultOpenTab,
                     onValueSelected = onDefaultOpenTabChange,
                     valueText = {
@@ -831,7 +831,7 @@ fun AppearanceSettings(
             item {
                 ListPreference(
                     title = { Text(stringResource(R.string.default_lib_chips)) },
-                    icon = { Icon(painterResource(R.drawable.solar_tag), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_database), null) },
                     selectedValue = defaultChip,
                     values =
                         listOf(
@@ -878,7 +878,7 @@ fun AppearanceSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.swipe_song_to_add)) },
-                    icon = { Icon(painterResource(R.drawable.solar_siren), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_routing), null) },
                     checked = swipeToSong,
                     onCheckedChange = onSwipeToSongChange,
                 )

@@ -305,7 +305,7 @@ private fun AboutOverflowMenu(
                 onClick = onOpenDependencyLicenses,
                 leadingIcon = {
                     Icon(
-                        painter = painterResource(R.drawable.solar_inbox),
+                        painter = painterResource(R.drawable.solar_info_circle),
                         contentDescription = null,
                     )
                 },
@@ -597,7 +597,7 @@ private fun TranslationContributorListItem(
         colors = ListItemDefaults.colors(containerColor = Color.Transparent),
         leadingContent = {
             Icon(
-                painter = painterResource(R.drawable.solar_planet),
+                painter = painterResource(R.drawable.solar_folder),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(32.dp),
@@ -669,7 +669,7 @@ private fun DependencyLicenseListItem(
         colors = ListItemDefaults.colors(containerColor = Color.Transparent),
         leadingContent = {
             Icon(
-                painter = painterResource(R.drawable.solar_inbox),
+                painter = painterResource(R.drawable.solar_info_circle),
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(32.dp),

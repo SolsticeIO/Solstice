@@ -193,7 +193,7 @@ fun AiIntegrationSettings(
                 ListPreference(
                     title = { Text(stringResource(R.string.ai_provider)) },
                     description = stringResource(R.string.ai_provider_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_atom), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_link_circle), null) },
                     selectedValue = provider,
                     values =
                         listOf(
@@ -239,7 +239,7 @@ fun AiIntegrationSettings(
                         } else {
                             stringResource(R.string.ai_api_key_configured)
                         },
-                    icon = { Icon(painterResource(R.drawable.solar_women), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_key), null) },
                     onClick = { showApiKeyDialog = true },
                     isEnabled = provider != AiProvider.NONE,
                 )
@@ -264,7 +264,7 @@ fun AiIntegrationSettings(
             item(visible = provider == AiProvider.CUSTOM) {
                 EditTextPreference(
                     title = { Text(stringResource(R.string.ai_model)) },
-                    icon = { Icon(painterResource(R.drawable.solar_atom), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_link_circle), null) },
                     value = customModel,
                     onValueChange = {
                         setCustomModel(it)
@@ -401,7 +401,7 @@ private fun ApiKeyDialog(
 
     DefaultDialog(
         onDismiss = onDismiss,
-        icon = { Icon(painterResource(R.drawable.solar_women), contentDescription = null) },
+        icon = { Icon(painterResource(R.drawable.solar_key), contentDescription = null) },
         title = { Text(stringResource(R.string.ai_api_key)) },
         buttons = {
             ApiKeyDialogButtons(
@@ -693,7 +693,7 @@ private fun ModelPickerPreference(
     PreferenceEntry(
         title = { Text(stringResource(R.string.ai_model)) },
         description = description,
-        icon = { Icon(painterResource(R.drawable.solar_atom), null) },
+        icon = { Icon(painterResource(R.drawable.solar_link_circle), null) },
         trailingContent = {
             if (isFetching) {
                 CircularWavyProgressIndicator(modifier = Modifier.size(24.dp))

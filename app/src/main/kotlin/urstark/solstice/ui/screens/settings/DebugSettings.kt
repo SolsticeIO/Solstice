@@ -209,7 +209,7 @@ fun DebugSettings(navController: NavController) {
                     SwitchPreference(
                         title = { Text(stringResource(R.string.show_nerd_stats)) },
                         description = stringResource(R.string.description_show_nerd_stats),
-                        icon = { Icon(painterResource(R.drawable.solar_stars), null) },
+                        icon = { Icon(painterResource(R.drawable.solar_chart), null) },
                         checked = showNerdStats,
                         onCheckedChange = onShowNerdStatsChange,
                     )
@@ -1103,7 +1103,7 @@ private fun NerdStatsSection(playerConnection: urstark.solstice.playback.PlayerC
                         )
 
                         NerdStatChip(
-                            icon = R.drawable.solar_tag,
+                            icon = R.drawable.solar_database,
                             label = stringResource(R.string.content_length_label),
                             value =
                                 currentFormat?.contentLength?.let {
@@ -1206,7 +1206,7 @@ private fun NerdStatsSection(playerConnection: urstark.solstice.playback.PlayerC
                         }
 
                     NerdStatChip(
-                        icon = R.drawable.solar_stars,
+                        icon = R.drawable.solar_chart,
                         label = stringResource(R.string.state_label),
                         value = playbackStateText,
                         modifier = Modifier.weight(1f),
@@ -1238,7 +1238,7 @@ private fun NerdStatsSection(playerConnection: urstark.solstice.playback.PlayerC
                             verticalAlignment = Alignment.CenterVertically,
                         ) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_women),
+                                painter = painterResource(R.drawable.solar_key),
                                 contentDescription = null,
                                 modifier = Modifier.size(18.dp),
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant,

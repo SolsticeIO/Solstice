@@ -371,7 +371,7 @@ fun LyricsSettings(
             item {
                 EnumListPreference(
                     title = { Text(stringResource(R.string.lyrics_mode)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     selectedValue = lyricsMode,
                     onValueSelected = onLyricsModeChange,
                     valueText = {
@@ -398,7 +398,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_click_change)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsClick,
                     onCheckedChange = onLyricsClickChange,
                 )
@@ -407,7 +407,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_auto_scroll)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsScroll,
                     onCheckedChange = onLyricsScrollChange,
                 )
@@ -416,7 +416,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_line_blur)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsLineBlur,
                     onCheckedChange = onLyricsLineBlurChange,
                 )
@@ -445,7 +445,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_betterlyrics)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enableBetterLyrics,
                     onCheckedChange = onEnableBetterLyricsChange,
                 )
@@ -454,7 +454,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_lrclib)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enableLrclib,
                     onCheckedChange = onEnableLrclibChange,
                 )
@@ -463,7 +463,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_kugou)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enableKugou,
                     onCheckedChange = onEnableKugouChange,
                 )
@@ -472,7 +472,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_unison_lyrics)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enableUnisonLyrics,
                     onCheckedChange = onEnableUnisonLyricsChange,
                 )
@@ -481,7 +481,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_simpmusic_lyrics)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enableSimpMusicLyrics,
                     onCheckedChange = onEnableSimpMusicLyricsChange,
                 )
@@ -490,7 +490,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.enable_paxsenix_lyrics)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enablePaxsenixLyrics,
                     onCheckedChange = onEnablePaxsenixLyricsChange,
                 )
@@ -499,7 +499,7 @@ fun LyricsSettings(
             item(visible = enablePaxsenixLyrics) {
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.paxsenix_stats)) },
-                    icon = { Icon(painterResource(R.drawable.solar_stars), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_chart), null) },
                     onClick = { showPaxsenixStatsDialog = true },
                 )
             }
@@ -507,7 +507,7 @@ fun LyricsSettings(
             item(visible = enablePaxsenixLyrics) {
                 SwitchPreference(
                     title = { Text("Paxsenix: Apple Music") },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enablePaxsenixAppleMusicLyrics,
                     onCheckedChange = onEnablePaxsenixAppleMusicLyricsChange,
                 )
@@ -516,7 +516,7 @@ fun LyricsSettings(
             item(visible = enablePaxsenixLyrics) {
                 SwitchPreference(
                     title = { Text("Paxsenix: NetEase") },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enablePaxsenixNeteaseLyrics,
                     onCheckedChange = onEnablePaxsenixNeteaseLyricsChange,
                 )
@@ -525,7 +525,7 @@ fun LyricsSettings(
             item(visible = enablePaxsenixLyrics) {
                 SwitchPreference(
                     title = { Text("Paxsenix: Spotify") },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enablePaxsenixSpotifyLyrics,
                     onCheckedChange = onEnablePaxsenixSpotifyLyricsChange,
                 )
@@ -534,7 +534,7 @@ fun LyricsSettings(
             item(visible = enablePaxsenixLyrics) {
                 SwitchPreference(
                     title = { Text("Paxsenix: Musixmatch") },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enablePaxsenixMusixmatchLyrics,
                     onCheckedChange = onEnablePaxsenixMusixmatchLyricsChange,
                 )
@@ -543,7 +543,7 @@ fun LyricsSettings(
             item(visible = enablePaxsenixLyrics) {
                 SwitchPreference(
                     title = { Text("Paxsenix: YouTube") },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = enablePaxsenixYouTubeLyrics,
                     onCheckedChange = onEnablePaxsenixYouTubeLyricsChange,
                 )
@@ -553,7 +553,7 @@ fun LyricsSettings(
                 PreferenceEntry(
                     title = { Text(stringResource(R.string.set_first_lyrics_provider)) },
                     description = providerOrder.firstOrNull()?.displayName(),
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     onClick = { showProviderOrderDialog = true },
                 )
             }
@@ -563,7 +563,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_romanize_japanese)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsRomanizeJapanese,
                     onCheckedChange = onLyricsRomanizeJapaneseChange,
                 )
@@ -572,7 +572,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_romanize_korean)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsRomanizeKorean,
                     onCheckedChange = onLyricsRomanizeKoreanChange,
                 )
@@ -581,7 +581,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_romanize_chinese)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsRomanizeChinese,
                     onCheckedChange = onLyricsRomanizeChineseChange,
                 )
@@ -590,7 +590,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_romanize_hindi)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsRomanizeHindi,
                     onCheckedChange = onLyricsRomanizeHindiChange,
                 )
@@ -599,7 +599,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.lyrics_romanize_other_languages)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = lyricsRomanizeOtherLanguages,
                     onCheckedChange = onLyricsRomanizeOtherLanguagesChange,
                 )
@@ -610,7 +610,7 @@ fun LyricsSettings(
             item {
                 SwitchPreference(
                     title = { Text(stringResource(R.string.preload_queue_lyrics)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     checked = preloadQueueLyricsEnabled,
                     onCheckedChange = onPreloadQueueLyricsEnabledChange,
                 )
@@ -619,7 +619,7 @@ fun LyricsSettings(
             item(visible = preloadQueueLyricsEnabled) {
                 NumberPickerPreference(
                     title = { Text(stringResource(R.string.queue_lyrics_preload_count)) },
-                    icon = { Icon(painterResource(R.drawable.solar_layers), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_document_text), null) },
                     value = queueLyricsPreloadCount,
                     onValueChange = onQueueLyricsPreloadCountChange,
                     minValue = 0,
@@ -803,7 +803,7 @@ private fun PaxsenixStatsDialog(
     DefaultDialog(
         onDismiss = onDismiss,
         title = { Text(stringResource(R.string.paxsenix_stats)) },
-        icon = { Icon(painterResource(R.drawable.solar_stars), contentDescription = null) },
+        icon = { Icon(painterResource(R.drawable.solar_chart), contentDescription = null) },
         buttons = {
             if (state is PaxsenixStatsState.Error) {
                 TextButton(onClick = onRetry) {

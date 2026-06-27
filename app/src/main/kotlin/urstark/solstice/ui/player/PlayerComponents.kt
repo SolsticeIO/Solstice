@@ -3292,7 +3292,7 @@ private fun V9Header(
         horizontalArrangement = Arrangement.spacedBy(14.dp),
     ) {
         V9HeaderButton(
-            iconRes = R.drawable.solar_export,
+            iconRes = R.drawable.solar_code,
             contentDescription = null,
             containerColor = containerColor,
             iconColor = iconColor,
@@ -3318,7 +3318,7 @@ private fun V9Header(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             V9HeaderButton(
-                iconRes = R.drawable.solar_layers,
+                iconRes = R.drawable.solar_document_text,
                 contentDescription = stringResource(R.string.lyrics),
                 containerColor = containerColor,
                 iconColor = iconColor,
