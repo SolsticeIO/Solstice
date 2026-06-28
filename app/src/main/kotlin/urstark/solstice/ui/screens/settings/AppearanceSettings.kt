@@ -823,6 +823,7 @@ fun AppearanceSettings(
                             NavigationTab.SEARCH -> stringResource(R.string.search)
                             NavigationTab.MOODANDGENRES -> stringResource(R.string.mood_and_genres)
                             NavigationTab.LIBRARY -> stringResource(R.string.filter_library)
+                            NavigationTab.SOCIAL -> stringResource(R.string.social)
                         }
                     },
                 )

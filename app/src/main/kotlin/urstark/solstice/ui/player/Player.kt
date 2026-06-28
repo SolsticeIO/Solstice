@@ -1732,8 +1732,10 @@ fun BottomSheetPlayer(
                                                         navController = navController,
                                                         playerBottomSheetState = state,
                                                         onShowDetailsDialog = {
-                                                            bottomSheetPageState.show {
-                                                                ShowMediaInfo(it)
+                                                            metadata.id.let { id ->
+                                                                bottomSheetPageState.show {
+                                                                    ShowMediaInfo(id)
+                                                                }
                                                             }
                                                         },
                                                         onDismiss = menuState::dismiss,
