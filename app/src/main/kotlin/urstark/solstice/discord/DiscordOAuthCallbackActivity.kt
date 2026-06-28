@@ -2,7 +2,7 @@
  * Solstice (2026)
  * © Stark — github.com/urstark
  * 
- * @@BASED_ON_SOLSTICE_TOKEN@@
+ * Based on ArchiveTune (2026)
  * © Rukamori — github.com/rukamori
  * 
  * GPL-3.0 License | Contributors: see git history
