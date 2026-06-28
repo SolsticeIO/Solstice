@@ -114,3 +114,7 @@ core.*
 /SOUL.md
 /string_cleaner.py
 /.codexignore
+
+# Secrets and keys
+*.jks
+*.base64

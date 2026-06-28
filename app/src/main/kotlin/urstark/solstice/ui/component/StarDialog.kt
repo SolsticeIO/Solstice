@@ -72,7 +72,7 @@ fun StarDialog(
 
             Button(
                 onClick = {
-                    uriHandler.openUri("https://koiiverse.cloud/donate")
+                    uriHandler.openUri("https://solsticeio.vercel.app/donate")
                     onSupport()
                 },
                 modifier = Modifier.fillMaxWidth(),

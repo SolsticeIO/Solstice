@@ -438,7 +438,7 @@ class AboutViewModel
                             id = "website",
                             iconResId = R.drawable.website,
                             labelResId = R.string.about_content_desc_website,
-                            url = "https://solstice.koiiverse.cloud",
+                            url = "https://solsticeio.vercel.app",
                         ),
                         AboutLinkUiModel(
                             id = "telegram",
@@ -450,7 +450,7 @@ class AboutViewModel
                             id = "donate",
                             iconResId = R.drawable.solar_hand_money,
                             labelResId = R.string.about_content_desc_donate,
-                            url = "https://koiiverse.cloud/donate",
+                            url = "https://solsticeio.vercel.app/donate",
                         ),
                         AboutLinkUiModel(
                             id = "discord",
@@ -462,7 +462,7 @@ class AboutViewModel
                             id = "privacy_policy",
                             iconResId = R.drawable.solar_lock,
                             labelResId = R.string.privacy,
-                            url = "https://solstice.koiiverse.cloud/privacy",
+                            url = "https://solsticeio.vercel.app/privacy",
                         ),
                     ),
                 leadDeveloper =
