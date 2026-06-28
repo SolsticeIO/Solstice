@@ -240,7 +240,7 @@
   <tbody>
     <tr>
       <td align="center">
-        <a href="https://nightly.link/SolsticeIO/Solstice/workflows/build/main/app-mobile-universal-release">
+        <a href="https://nightly.link/SolsticeIO/Solstice/workflows/build/main/app-gms-mobile-universal-release.zip">
           <img src="https://raw.githubusercontent.com/SolsticeIO/Solstice/refs/heads/main/assets/badge_github.png" height="50" alt="Download the latest Solstice nightly build">
         </a>
       </td>

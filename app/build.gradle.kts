@@ -236,7 +236,9 @@ dependencies {
     implementation(libs.datastore)
     implementation(libs.work.runtime)
     implementation("androidx.browser:browser:1.10.0")
-
+    
+    // Matrix Rust SDK for Chat
+    implementation("org.matrix.rustcomponents:sdk-android:0.2.1")
     implementation(libs.compose.runtime)
     implementation(libs.compose.foundation)
     implementation(libs.compose.ui)
