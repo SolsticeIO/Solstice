@@ -942,7 +942,7 @@ private fun DiscordAccountGroupCard(
                                 painter =
                                     painterResource(
                                         when (authorizationUiMode) {
-                                            DiscordAuthorizationUiMode.Success -> R.drawable.solar_check_square
+                                            DiscordAuthorizationUiMode.Success -> R.drawable.solar_check_circle
                                             DiscordAuthorizationUiMode.Failure -> R.drawable.solar_close_square
                                             DiscordAuthorizationUiMode.Idle -> R.drawable.solar_record
                                             DiscordAuthorizationUiMode.Waiting -> R.drawable.solar_record

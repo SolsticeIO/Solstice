@@ -880,7 +880,7 @@ private fun StorageLocationOptionRow(
             if (selected) {
                 Spacer(Modifier.width(16.dp))
                 Icon(
-                    painter = painterResource(R.drawable.solar_check_square),
+                    painter = painterResource(R.drawable.solar_check_circle),
                     contentDescription = null,
                     modifier = Modifier.size(24.dp),
                 )

@@ -823,7 +823,7 @@ fun UpdateScreen(
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_check_square),
+                            painter = painterResource(R.drawable.solar_check_circle),
                             contentDescription = null,
                             modifier = Modifier.size(24.dp),
                             tint = MaterialTheme.colorScheme.onPrimaryContainer,

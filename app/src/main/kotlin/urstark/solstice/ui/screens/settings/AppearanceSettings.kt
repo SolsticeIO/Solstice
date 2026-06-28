@@ -453,7 +453,7 @@ fun AppearanceSettings(
                 SwitchPreference(
                     title = { Text(stringResource(R.string.disable_blur)) },
                     description = stringResource(R.string.disable_blur_desc),
-                    icon = { Icon(painterResource(R.drawable.solar_eye_closed), null) },
+                    icon = { Icon(painterResource(R.drawable.solar_waterdrop), null) },
                     checked = disableBlur,
                     onCheckedChange = onDisableBlurChange,
                 )

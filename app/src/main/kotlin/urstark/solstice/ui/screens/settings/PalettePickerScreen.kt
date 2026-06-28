@@ -1486,7 +1486,7 @@ private fun SelectableMiniPalette(
                     exit = shrinkOut(shrinkTowards = Alignment.Center) + fadeOut(),
                 ) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_check_square),
+                        painter = painterResource(R.drawable.solar_check_circle),
                         contentDescription = null,
                         modifier =
                             Modifier

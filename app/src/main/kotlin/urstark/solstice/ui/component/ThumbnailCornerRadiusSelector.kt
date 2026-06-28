@@ -359,7 +359,7 @@ fun ThumbnailCornerRadiusModal(
                         ) {
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_check_square),
+                                    painter = painterResource(R.drawable.solar_check_circle),
                                     contentDescription = null,
                                     modifier = Modifier.size(18.dp),
                                 )

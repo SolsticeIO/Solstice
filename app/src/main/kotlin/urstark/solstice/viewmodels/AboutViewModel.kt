@@ -468,28 +468,22 @@ class AboutViewModel
                 leadDeveloper =
                     TeamMember(
                         avatarUrl = "https://avatars.githubusercontent.com/u/107134739?v=4",
-                        name = "morie",
+                        name = "Stark",
                         positionResId = R.string.about_position_lead_dev,
-                        profileUrl = "https://github.com/rukamori",
+                        profileUrl = "https://github.com/urstark",
                         links =
                             AboutLinkCollection.of(
                                 AboutLinkUiModel(
                                     id = "github",
                                     iconResId = R.drawable.github,
                                     labelResId = R.string.about_content_desc_github,
-                                    url = "https://github.com/rukamori",
+                                    url = "https://github.com/urstark",
                                 ),
                                 AboutLinkUiModel(
                                     id = "website",
                                     iconResId = R.drawable.website,
                                     labelResId = R.string.about_content_desc_website,
-                                    url = "https://koiiverse.cloud",
-                                ),
-                                AboutLinkUiModel(
-                                    id = "discord",
-                                    iconResId = R.drawable.discord,
-                                    labelResId = R.string.about_content_desc_discord,
-                                    url = "https://discord.com/users/886971572668219392",
+                                    url = "https://urstark.is-a.dev",
                                 ),
                             ),
                     ),

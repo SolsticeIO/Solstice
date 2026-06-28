@@ -654,7 +654,7 @@ private fun PlaylistTagColorSwatch(
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_check_square),
+                            painter = painterResource(R.drawable.solar_check_circle),
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.onPrimaryContainer,
                             modifier = Modifier.size(18.dp),
