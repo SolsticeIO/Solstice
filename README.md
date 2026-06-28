@@ -20,19 +20,19 @@
   </p>
 
   <p align="center">
-    <a href="https://solstice.koiiverse.cloud"><b>Official Website</b></a> •
+    <a href="https://solstice.vercel.app"><b>Official Website</b></a> •
     <a href="#features"><b>Features</b></a> •
-    <a href="https://solstice.koiiverse.cloud/privacy"><b>Privacy</b></a> •
+    <a href="https://solstice.vercel.app/privacy"><b>Privacy</b></a> •
     <a href="#download-now"><b>Download</b></a> •
     <a href="#screenshots"><b>Screenshots</b></a> •
     <a href="https://github.com/SolsticeIO/Solstice/issues/new/choose"><b>Support</b></a>
   </p>
 
   <div align="center">
-    <img src="https://img.shields.io/github/v/release/SolsticeApp/Solstice?style=for-the-badge&color=6366f1&labelColor=1e1e2e&logo=github" alt="Latest Version" />
-    <img src="https://img.shields.io/github/downloads/SolsticeApp/Solstice/total?style=for-the-badge&color=6366f1&labelColor=1e1e2e&logo=github" alt="Downloads" />
-    <img src="https://img.shields.io/github/stars/SolsticeApp/Solstice?style=for-the-badge&color=6366f1&labelColor=1e1e2e&logo=github" alt="Stars" />
-    <img src="https://img.shields.io/github/license/SolsticeApp/Solstice?style=for-the-badge&color=6366f1&labelColor=1e1e2e" alt="License" />
+    <img src="https://img.shields.io/github/v/release/SolsticeIO/Solstice?style=for-the-badge&color=6366f1&labelColor=1e1e2e&logo=github" alt="Latest Version" />
+    <img src="https://img.shields.io/github/downloads/SolsticeIO/Solstice/total?style=for-the-badge&color=6366f1&labelColor=1e1e2e&logo=github" alt="Downloads" />
+    <img src="https://img.shields.io/github/stars/SolsticeIO/Solstice?style=for-the-badge&color=6366f1&labelColor=1e1e2e&logo=github" alt="Stars" />
+    <img src="https://img.shields.io/github/license/SolsticeIO/Solstice?style=for-the-badge&color=6366f1&labelColor=1e1e2e" alt="License" />
     <img src="https://img.shields.io/badge/Architecture-MVVM-6366f1?style=for-the-badge&labelColor=1e1e2e&logo=kotlin" alt="MVVM Architecture" />
     <img src="https://img.shields.io/badge/Language-Kotlin-7f52ff?style=for-the-badge&logo=kotlin&color=6366f1&labelColor=1e1e2e" alt="Kotlin Language" />
     <img src="https://img.shields.io/badge/Toolkit-Jetpack_Compose-4285f4?style=for-the-badge&logo=jetpack-compose&color=6366f1&labelColor=1e1e2e" alt="Jetpack Compose Toolkit" />
@@ -50,6 +50,13 @@
 </div>
 
 <hr />
+
+<br />
+
+> [!NOTE]
+> **This is a fork of [ArchiveTune](https://github.com/ArchiveTuneApp/ArchiveTune) by [rukamori](https://github.com/rukamori).** All foundational credit goes to rukamori for building ArchiveTune. This fork is full compliance with the [GPL-3.0 License](LICENSE).
+> 
+<br />
 
 **Solstice** isn’t just another generic YouTube Music wrapper. It’s a fully custom-built player made from the ground up, because we think your music should stay private, look clean, and work exactly the way you expect. If you care about sound quality and want something that actually feels good to use, this is it.
 
@@ -188,8 +195,8 @@
         </a>
       </td>
       <td align="center">
-        <a href="https://apt.izzysoft.de/fdroid/index/apk/urstark.solstice">
-          <img src="https://raw.githubusercontent.com/SolsticeApp/Solstice/757d5932832e1da27ced56de98c5ad1275cf0db1/assets/IzzyOnDroidButtonBorder.svg" height="50" alt="Get Solstice on IzzyOnDroid">
+        <a href="https://apt.izzysoft.de/fdroid/index/apk/moe.rukamori.solstice">
+          <img src="https://raw.githubusercontent.com/SolsticeIO/Solstice/757d5932832e1da27ced56de98c5ad1275cf0db1/assets/IzzyOnDroidButtonBorder.svg" height="50" alt="Get Solstice on IzzyOnDroid">
         </a>
       </td>
     </tr>
@@ -199,7 +206,7 @@
     <tr>
       <td align="center" colspan="2">
         <a href="https://github.com/SolsticeIO/Solstice/releases/latest">
-          <img src="https://raw.githubusercontent.com/SolsticeApp/Solstice/refs/heads/main/assets/badge_github.png" height="50" alt="Get Solstice on GitHub">
+          <img src="https://raw.githubusercontent.com/SolsticeIO/Solstice/refs/heads/main/assets/badge_github.png" height="50" alt="Get Solstice on GitHub">
         </a>
       </td>
     </tr>
@@ -209,13 +216,13 @@
     </tr>
     <tr>
       <td align="center">
-        <a href="https://www.openapk.net/solstice/urstark.solstice/">
+        <a href="https://www.openapk.net/solstice/moe.rukamori.solstice/">
           <img src="https://www.openapk.net/images/openapk-badge.png" height="75" alt="Get Solstice on OpenAPK">
         </a>
       </td>
       <td align="center">
         <a href="https://unclouded.app/apps/solstice/">
-          <img src="https://raw.githubusercontent.com/SolsticeApp/Solstice/refs/heads/dev/assets/badge_unclouded.png" height="50" alt="Get Solstice on Unclouded">
+          <img src="https://raw.githubusercontent.com/SolsticeIO/Solstice/refs/heads/dev/assets/badge_unclouded.png" height="50" alt="Get Solstice on Unclouded">
         </a>
       </td>
     </tr>
@@ -233,8 +240,8 @@
   <tbody>
     <tr>
       <td align="center">
-        <a href="https://nightly.link/SolsticeApp/Solstice/workflows/build/dev/app-mobile-universal-release">
-          <img src="https://raw.githubusercontent.com/SolsticeApp/Solstice/refs/heads/main/assets/badge_github.png" height="50" alt="Download the latest Solstice nightly build">
+        <a href="https://nightly.link/SolsticeIO/Solstice/workflows/build/main/app-mobile-universal-release">
+          <img src="https://raw.githubusercontent.com/SolsticeIO/Solstice/refs/heads/main/assets/badge_github.png" height="50" alt="Download the latest Solstice nightly build">
         </a>
       </td>
     </tr>
@@ -248,8 +255,7 @@
 ## ❓ Need Help or Have Questions?
 Join Our Telegram Channels or Discord Servers for Support and Discussion.
 
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/SolsticeIO)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/XF2fpb9rTq)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/SolsticeGC)
 
 ---
 
@@ -260,14 +266,14 @@ Solstice belongs to everyone. Help us localize the experience for your region.
 [![Static Badge](https://img.shields.io/badge/translate-help?style=for-the-badge&logo=weblate&labelColor=grey)](https://translate.codeberg.org/engage/solstice/)
 
 <div align="center">
-  <a href="https://translate.codeberg.org/engage/solstice/">
-    <img src="https://translate.codeberg.org/widget/solstice/horizontal-blue.svg" alt="Translation status" />
+  <a href="https://translate.codeberg.org/engage/archivetune/">
+    <img src="https://translate.codeberg.org/widget/archivetune/horizontal-blue.svg" alt="Translation status" />
   </a>
 </div>
 
 ### ✨ Project Contributors
 <a href="https://github.com/SolsticeIO/Solstice/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SolsticeApp/Solstice&columns=6" />
+  <img src="https://contrib.rocks/image?repo=SolsticeIO/Solstice&columns=6" />
 </a>
 
 ### 🛠️ Development & Engineering
@@ -280,6 +286,7 @@ Interested in building the project or contributing? Solstice is built on a high-
 
 Solstice is made possible by the work of many open-source projects and communities:
 
+- **ArchiveTune** by [rukamori](https://github.com/rukamori) — the original developer whose work is the foundation of this app. ([ArchiveTuneApp/ArchiveTune](https://github.com/ArchiveTuneApp/ArchiveTune))
 - **Metrolist** by [Mostafa Alagamy](https://github.com/mostafaalagamy/Metrolist) for the base framework.
 - **SimpMusic** by [maxrave-dev](https://github.com/maxrave-dev/SimpMusic) for the lyrics API provider.
 - [BetterLyrics](https://better-lyrics.boidu.dev/) for word-by-word lyrics, unison and artwork provider support.
@@ -299,8 +306,8 @@ Solstice is an independent third-party client.
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/SolsticeApp/Solstice/refs/heads/dev/fastlane/metadata/android/en-US/images/SolsticeFull.png" alt="Solstice Banner" style="width: 100%; max-width: 500px;">
+  <img src="https://raw.githubusercontent.com/SolsticeIO/Solstice/refs/heads/main/fastlane/metadata/android/en-US/images/ArchiveTuneFull.png" alt="Solstice Banner" style="width: 100%; max-width: 500px;">
   <p><b>If Solstice elevated your music experience, please consider giving us a ⭐</b></p>
   <br />
-  <img src="https://raw.githubusercontent.com/SolsticeApp/Solstice/refs/heads/dev/assets/badge_part.png" alt="Solstice Banner" style="width: 160px">
+  <img src="https://raw.githubusercontent.com/SolsticeIO/Solstice/refs/heads/main/assets/badge_part.png" alt="Solstice Banner" style="width: 160px">
 </div>
