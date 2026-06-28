@@ -448,7 +448,7 @@ class AboutViewModel
                         ),
                         AboutLinkUiModel(
                             id = "donate",
-                            iconResId = R.drawable.solar_heart,
+                            iconResId = R.drawable.solar_hand_money,
                             labelResId = R.string.about_content_desc_donate,
                             url = "https://koiiverse.cloud/donate",
                         ),

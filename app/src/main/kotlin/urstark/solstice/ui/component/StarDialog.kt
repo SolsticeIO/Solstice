@@ -78,7 +78,7 @@ fun StarDialog(
                 modifier = Modifier.fillMaxWidth(),
             ) {
                 Icon(
-                    painter = painterResource(id = R.drawable.solar_feed),
+                    painter = painterResource(id = R.drawable.solar_hand_money),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp),
                 )
@@ -95,7 +95,7 @@ fun StarDialog(
                 shapes = ButtonDefaults.shapes(),
             ) {
                 Icon(
-                    painter = painterResource(id = R.drawable.solar_star),
+                    painter = painterResource(id = R.drawable.github),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp),
                 )

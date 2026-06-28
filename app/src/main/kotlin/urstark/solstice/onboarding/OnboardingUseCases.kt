@@ -97,9 +97,9 @@ class BuildOnboardingUiStateUseCase
 
         private fun OnboardingPermissionId.iconResId(): Int =
             when (this) {
-                OnboardingPermissionId.NOTIFICATIONS -> R.drawable.solar_music_note
-                OnboardingPermissionId.LOCAL_AUDIO -> R.drawable.solar_database
-                OnboardingPermissionId.MICROPHONE -> R.drawable.solar_cosmetic
+                OnboardingPermissionId.NOTIFICATIONS -> R.drawable.solar_bell
+                OnboardingPermissionId.LOCAL_AUDIO -> R.drawable.solar_folder
+                OnboardingPermissionId.MICROPHONE -> R.drawable.solar_microphone_2
                 OnboardingPermissionId.BLUETOOTH_CONNECT -> R.drawable.solar_bluetooth
                 OnboardingPermissionId.NETWORK -> R.drawable.solar_wi_fi_router
                 OnboardingPermissionId.PLAYBACK_SERVICE -> R.drawable.solar_music_library_2
@@ -139,28 +139,28 @@ class BuildOnboardingUiStateUseCase
                         id = "github",
                         titleResId = R.string.support_development_star,
                         descriptionResId = R.string.onboarding_community_github_desc,
-                        iconResId = R.drawable.solar_gift,
+                        iconResId = R.drawable.github,
                         url = "https://github.com/SolsticeIO/Solstice",
                     ),
                     OnboardingCommunityActionUiModel(
                         id = "discord",
                         titleResId = R.string.onboarding_community_discord_title,
                         descriptionResId = R.string.onboarding_community_telegram_desc,
-                        iconResId = R.drawable.solar_record,
+                        iconResId = R.drawable.discord,
                         url = "https://discord.gg/XF2fpb9rTq",
                     ),
                     OnboardingCommunityActionUiModel(
                         id = "telegram",
                         titleResId = R.string.onboarding_community_telegram_title,
                         descriptionResId = R.string.onboarding_community_telegram_desc,
-                        iconResId = R.drawable.solar_stream,
+                        iconResId = R.drawable.telegram,
                         url = "https://t.me/SolsticeIO",
                     ),
                     OnboardingCommunityActionUiModel(
                         id = "donate",
                         titleResId = R.string.about_content_desc_donate,
                         descriptionResId = R.string.onboarding_community_donate_desc,
-                        iconResId = R.drawable.solar_feed,
+                        iconResId = R.drawable.solar_hand_money,
                         url = "https://koiiverse.cloud/donate",
                     ),
                 )
