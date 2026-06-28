@@ -13,6 +13,7 @@
 package urstark.solstice
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
@@ -28,7 +29,10 @@ import android.view.View
 import android.view.WindowManager
 import android.webkit.MimeTypeMap
 import androidx.activity.ComponentActivity
+import android.speech.RecognizerIntent
 import androidx.activity.compose.BackHandler
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.compose.setContent
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.AnimatedVisibility
@@ -935,6 +939,18 @@ class MainActivity : ComponentActivity() {
                         }
                     }
 
+                    val speechRecognizerLauncher = rememberLauncherForActivityResult(
+                        contract = ActivityResultContracts.StartActivityForResult()
+                    ) { result ->
+                        if (result.resultCode == Activity.RESULT_OK) {
+                            val matches = result.data?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
+                            matches?.firstOrNull()?.let { text ->
+                                onQueryChange(TextFieldValue(text, androidx.compose.ui.text.TextRange(text.length)))
+                                onSearch(text)
+                            }
+                        }
+                    }
+
                     var openSearchImmediately: Boolean by remember {
                         mutableStateOf(intent?.action == ACTION_SEARCH)
                     }
@@ -1435,6 +1451,7 @@ class MainActivity : ComponentActivity() {
                             when (navBackStackEntry?.destination?.route) {
                                 Screens.Home.route -> R.string.home
                                 Screens.Search.route -> R.string.search
+                                Screens.Social.route -> R.string.social
                                 Screens.Library.route -> R.string.filter_library
                                 else -> null
                             }
@@ -1554,6 +1571,7 @@ class MainActivity : ComponentActivity() {
                                             remember(navBackStackEntry) {
                                                 navBackStackEntry?.destination?.route == Screens.Home.route ||
                                                     navBackStackEntry?.destination?.route == Screens.Search.route ||
+                                                    navBackStackEntry?.destination?.route == Screens.Social.route ||
                                                     navBackStackEntry?.destination?.route == Screens.Library.route
                                             }
                                         val shouldShowBlurBackground =
@@ -1762,6 +1780,7 @@ class MainActivity : ComponentActivity() {
                                                         ),
                                                 )
                                             },
+
                                             leadingIcon = {
                                                 IconButton(
                                                     onClick = {
@@ -1825,9 +1844,24 @@ class MainActivity : ComponentActivity() {
                                                                 },
                                                             ) {
                                                                 Icon(
-                                                                    painter = painterResource(R.drawable.solar_close_square),
+                                                                    painter = painterResource(R.drawable.close),
                                                                     contentDescription = null,
                                                                 )
+                                                            }
+                                                        } else {
+                                                            IconButton(
+                                                                onClick = {
+                                                                    try {
+                                                                        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+                                                                            putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+                                                                        }
+                                                                        speechRecognizerLauncher.launch(intent)
+                                                                    } catch (e: Exception) {
+                                                                        android.widget.Toast.makeText(this@MainActivity, "Voice search is not available", android.widget.Toast.LENGTH_SHORT).show()
+                                                                    }
+                                                                }
+                                                            ) {
+                                                                Icon(painterResource(R.drawable.solar_microphone_2), contentDescription = null)
                                                             }
                                                         }
                                                         IconButton(
@@ -1847,7 +1881,7 @@ class MainActivity : ComponentActivity() {
                                                                     painterResource(
                                                                         when (searchSource) {
                                                                             SearchSource.LOCAL -> R.drawable.solar_music_library_2
-                                                                            SearchSource.ONLINE -> R.drawable.solar_folder
+                                                                            SearchSource.ONLINE -> R.drawable.solar_global
                                                                         },
                                                                     ),
                                                                 contentDescription = null,
@@ -2151,6 +2185,8 @@ class MainActivity : ComponentActivity() {
                                         } else {
                                             when (tabOpenedFromShortcut ?: defaultOpenTab) {
                                                 NavigationTab.HOME -> Screens.Home.route
+                                                NavigationTab.SEARCH -> Screens.Search.route
+                                                NavigationTab.SOCIAL -> Screens.Social.route
                                                 NavigationTab.LIBRARY -> Screens.Library.route
                                                 else -> Screens.Home.route
                                             }
@@ -2316,6 +2352,21 @@ class MainActivity : ComponentActivity() {
                         if (openSearchFromRoute?.value == true) {
                             navBackStackEntry?.savedStateHandle?.set("openSearch", false)
                             openSearch()
+                        }
+                    }
+
+                    val voiceSearchQueryFromRoute =
+                        navBackStackEntry
+                            ?.savedStateHandle
+                            ?.getStateFlow("voiceSearchQuery", null as String?)
+                            ?.collectAsStateWithLifecycle()
+
+                    LaunchedEffect(voiceSearchQueryFromRoute?.value) {
+                        voiceSearchQueryFromRoute?.value?.let { queryText ->
+                            navBackStackEntry?.savedStateHandle?.set("voiceSearchQuery", null as String?)
+                            onQueryChange(TextFieldValue(queryText, androidx.compose.ui.text.TextRange(queryText.length)))
+                            onActiveChange(true)
+                            onSearch(queryText)
                         }
                     }
                 }
@@ -2733,14 +2784,6 @@ private fun TranslucentTopAppBarIconButton(
 ) {
     IconButton(
         onClick = onClick,
-        colors =
-            IconButtonDefaults.iconButtonColors(
-                containerColor =
-                    MaterialTheme.colorScheme.surfaceContainerHighest.copy(
-                        alpha = TopAppBarIconButtonContainerAlpha,
-                    ),
-                contentColor = MaterialTheme.colorScheme.onSurfaceVariant,
-            ),
         content = content,
     )
 }

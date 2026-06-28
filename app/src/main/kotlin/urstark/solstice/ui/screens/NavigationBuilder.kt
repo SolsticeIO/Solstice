@@ -124,13 +124,21 @@ fun NavGraphBuilder.navigationBuilder(
     ) {
         LibraryScreen(navController)
     }
+    composable(Screens.Social.route) {
+        SocialScreen(navController)
+    }
     composable(Screens.Search.route) {
         SearchScreen(
             navController = navController,
-            onSearchClick = {
+            onSearchClick = { query ->
                 navController.currentBackStackEntry
                     ?.savedStateHandle
                     ?.set("openSearch", true)
+                if (query != null) {
+                    navController.currentBackStackEntry
+                        ?.savedStateHandle
+                        ?.set("voiceSearchQuery", query)
+                }
             },
         )
     }
