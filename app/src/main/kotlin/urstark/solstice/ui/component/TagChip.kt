@@ -174,7 +174,7 @@ fun TagChip(
                     contentAlignment = Alignment.Center,
                 ) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_close_square),
+                        painter = painterResource(R.drawable.close),
                         contentDescription = null,
                         tint = contentColor,
                         modifier = Modifier.size(14.dp),

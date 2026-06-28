@@ -787,7 +787,7 @@ fun SpotifyPlaylistScreen(
                     Icon(
                         painter =
                             painterResource(
-                                if (isSearching) R.drawable.solar_close_square else R.drawable.solar_arrow_left,
+                                if (isSearching) R.drawable.close else R.drawable.solar_arrow_left,
                             ),
                         contentDescription = null,
                     )

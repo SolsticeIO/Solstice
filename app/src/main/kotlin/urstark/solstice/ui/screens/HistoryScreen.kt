@@ -16,6 +16,11 @@
 
 package urstark.solstice.ui.screens
 
+import android.app.Activity
+import android.content.Intent
+import android.speech.RecognizerIntent
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.Crossfade
@@ -159,6 +164,17 @@ fun HistoryScreen(
         mutableStateOf(TextFieldValue())
     }
     var selectedEventIds by rememberSaveable { mutableStateOf(emptyList<Long>()) }
+
+    val speechRecognizerLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val matches = result.data?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
+            matches?.firstOrNull()?.let { text ->
+                query = TextFieldValue(text, androidx.compose.ui.text.TextRange(text.length))
+            }
+        }
+    }
 
     val focusRequester = remember { FocusRequester() }
     val localListState = rememberLazyListState()
@@ -498,7 +514,7 @@ fun HistoryScreen(
                             Icon(
                                 painter =
                                     painterResource(
-                                        if (selectionCount > 0) R.drawable.solar_close_square else R.drawable.solar_arrow_left,
+                                        if (selectionCount > 0) R.drawable.close else R.drawable.solar_arrow_left,
                                     ),
                                 contentDescription = null,
                             )
@@ -602,7 +618,26 @@ fun HistoryScreen(
                                 onLongClick = {},
                             ) {
                                 Icon(
-                                    painter = painterResource(R.drawable.solar_close_square),
+                                    painter = painterResource(R.drawable.close),
+                                    contentDescription = null,
+                                )
+                            }
+                        } else {
+                            AppIconButton(
+                                onClick = {
+                                    try {
+                                        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+                                            putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+                                        }
+                                        speechRecognizerLauncher.launch(intent)
+                                    } catch (e: Exception) {
+                                        android.widget.Toast.makeText(context, "Voice search is not available", android.widget.Toast.LENGTH_SHORT).show()
+                                    }
+                                },
+                                onLongClick = {},
+                            ) {
+                                Icon(
+                                    painter = painterResource(R.drawable.solar_microphone_2),
                                     contentDescription = null,
                                 )
                             }

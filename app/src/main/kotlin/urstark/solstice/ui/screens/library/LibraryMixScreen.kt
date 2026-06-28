@@ -237,7 +237,7 @@ fun LibraryMixScreen(
                         ShortcutCard(
                             title = stringResource(R.string.offline_shortcut),
                             countText = stringResource(R.string.downloaded_desc),
-                            iconRes = R.drawable.solar_link,
+                            iconRes = R.drawable.solar_download_minimalistic,
                             containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f),
                             iconColor = MaterialTheme.colorScheme.primary,
                             modifier = Modifier.weight(1f),
@@ -253,7 +253,7 @@ fun LibraryMixScreen(
                         ShortcutCard(
                             title = stringResource(R.string.cached),
                             countText = stringResource(R.string.instant_playback),
-                            iconRes = R.drawable.solar_case,
+                            iconRes = R.drawable.solar_database,
                             containerColor = MaterialTheme.colorScheme.tertiaryContainer.copy(alpha = 0.6f),
                             iconColor = MaterialTheme.colorScheme.tertiary,
                             modifier = Modifier.weight(1f),

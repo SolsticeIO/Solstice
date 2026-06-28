@@ -231,7 +231,7 @@ private fun SeparatorChip(
                 contentAlignment = Alignment.Center,
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_square),
+                    painter = painterResource(R.drawable.close),
                     contentDescription = null,
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.size(14.dp),

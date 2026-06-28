@@ -578,7 +578,7 @@ private fun ModelPickerPreference(
                                         onClick = { searchQuery = "" },
                                     ) {
                                         Icon(
-                                            painter = painterResource(R.drawable.solar_close_square),
+                                            painter = painterResource(R.drawable.close),
                                             contentDescription = stringResource(R.string.clear),
                                         )
                                     }

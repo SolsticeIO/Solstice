@@ -270,7 +270,7 @@ fun AlbumMenu(
                     title = stringResource(R.string.already_in_playlist),
                     thumbnailContent = {
                         Image(
-                            painter = painterResource(R.drawable.solar_close_square),
+                            painter = painterResource(R.drawable.close),
                             contentDescription = null,
                             colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onBackground),
                             modifier = Modifier.size(ListThumbnailSize),

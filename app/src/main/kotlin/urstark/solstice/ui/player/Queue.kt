@@ -1213,7 +1213,7 @@ private fun QueueSelectionFloatingToolbar(
                 contentColor = fabContentColor,
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_square),
+                    painter = painterResource(R.drawable.close),
                     contentDescription = stringResource(R.string.close),
                     modifier = Modifier.size(22.dp),
                 )

@@ -860,7 +860,7 @@ private fun LyricsSearchResultHeader(
                 modifier = Modifier.size(48.dp),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_square),
+                    painter = painterResource(R.drawable.close),
                     contentDescription = stringResource(R.string.close),
                     tint = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
@@ -1359,7 +1359,7 @@ private fun LyricsSearchInputHeader(onDismiss: () -> Unit) {
 
         IconButton(onClick = onDismiss) {
             Icon(
-                painter = painterResource(R.drawable.solar_close_square),
+                painter = painterResource(R.drawable.close),
                 contentDescription = stringResource(R.string.close),
             )
         }
@@ -1392,7 +1392,7 @@ private fun LyricsSearchTextField(
                 {
                     IconButton(onClick = { onValueChange(TextFieldValue()) }) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_close_square),
+                            painter = painterResource(R.drawable.close),
                             contentDescription = stringResource(R.string.clear),
                         )
                     }

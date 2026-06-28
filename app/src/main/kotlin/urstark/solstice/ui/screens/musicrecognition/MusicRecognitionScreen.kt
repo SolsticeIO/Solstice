@@ -456,7 +456,7 @@ private fun RecognitionHistoryBottomSheet(
                 )
                 IconButton(onClick = onDismiss) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_close_square),
+                        painter = painterResource(R.drawable.close),
                         contentDescription = stringResource(R.string.close),
                     )
                 }
@@ -482,7 +482,7 @@ private fun RecognitionHistoryBottomSheet(
                                 {
                                     IconButton(onClick = { query = "" }) {
                                         Icon(
-                                            painter = painterResource(R.drawable.solar_close_square),
+                                            painter = painterResource(R.drawable.close),
                                             contentDescription = stringResource(R.string.clear),
                                         )
                                     }
@@ -764,21 +764,21 @@ private fun RecognitionListenPane(
                 MusicRecognitionState.Ready -> {
                     StatusPill(
                         label = stringResource(R.string.music_recognition_tap_to_listen),
-                        iconRes = R.drawable.solar_cosmetic,
+                        iconRes = R.drawable.solar_microphone_2,
                     )
                 }
 
                 MusicRecognitionState.Listening -> {
                     StatusPill(
                         label = stringResource(R.string.music_recognition_listening),
-                        iconRes = R.drawable.solar_lightning,
+                        iconRes = R.drawable.solar_soundwave,
                     )
                 }
 
                 MusicRecognitionState.Processing -> {
                     StatusPill(
                         label = stringResource(R.string.music_recognition_processing),
-                        iconRes = R.drawable.solar_case,
+                        iconRes = R.drawable.solar_cpu,
                     )
                 }
 
@@ -1400,9 +1400,9 @@ private fun ListeningOrb(
 
         val icon =
             when {
-                isProcessing -> R.drawable.solar_case
-                isActive -> R.drawable.solar_lightning
-                else -> R.drawable.solar_cosmetic
+                isProcessing -> R.drawable.solar_cpu
+                isActive -> R.drawable.solar_soundwave
+                else -> R.drawable.solar_microphone_2
             }
 
         val iconAlpha by animateFloatAsState(

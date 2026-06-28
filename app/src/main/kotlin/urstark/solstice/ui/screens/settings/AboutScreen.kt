@@ -412,7 +412,7 @@ private fun AboutFullScreenDialog(
                     navigationIcon = {
                         androidx.compose.material3.IconButton(onClick = onDismiss) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_close_square),
+                                painter = painterResource(R.drawable.close),
                                 contentDescription = stringResource(R.string.close_dialog),
                             )
                         }

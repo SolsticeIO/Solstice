@@ -934,7 +934,7 @@ private fun ParticipantRow(
                     }
                     IconButton(onClick = { viewModel.rejectParticipant(participant.id) }) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_close_square),
+                            painter = painterResource(R.drawable.close),
                             contentDescription = stringResource(R.string.together_reject),
                         )
                     }

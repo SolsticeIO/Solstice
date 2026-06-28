@@ -500,7 +500,7 @@ private fun IpRotationPreference(
                             Icon(
                                 painter =
                                     painterResource(
-                                        id = if (isChecked) R.drawable.solar_check_circle else R.drawable.solar_close_square,
+                                        id = if (isChecked) R.drawable.solar_check_circle else R.drawable.close,
                                     ),
                                 contentDescription = null,
                                 modifier = Modifier.size(SwitchDefaults.IconSize),

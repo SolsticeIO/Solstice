@@ -1725,7 +1725,7 @@ fun EqualizerDialog(
                     navigationIcon = {
                         IconButton(onClick = onDismiss) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_close_square),
+                                painter = painterResource(R.drawable.close),
                                 contentDescription = null,
                             )
                         }
@@ -2295,7 +2295,7 @@ private fun EqToggleSliderRow(
                 onCheckedChange = onEnabledChange,
                 thumbContent = {
                     Icon(
-                        painter = painterResource(id = if (enabled) R.drawable.solar_check_circle else R.drawable.solar_close_square),
+                        painter = painterResource(id = if (enabled) R.drawable.solar_check_circle else R.drawable.close),
                         contentDescription = null,
                         modifier = Modifier.size(SwitchDefaults.IconSize),
                     )

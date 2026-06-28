@@ -383,7 +383,7 @@ fun AddToPlaylistDialog(
                                     Icon(
                                         painter =
                                             painterResource(
-                                                if (showSearchField) R.drawable.solar_close_square else R.drawable.solar_magnifer,
+                                                if (showSearchField) R.drawable.close else R.drawable.solar_magnifer,
                                             ),
                                         contentDescription =
                                             stringResource(
@@ -409,7 +409,7 @@ fun AddToPlaylistDialog(
                                         if (searchQuery.isNotBlank()) {
                                             IconButton(onClick = { searchQuery = "" }) {
                                                 Icon(
-                                                    painter = painterResource(R.drawable.solar_close_square),
+                                                    painter = painterResource(R.drawable.close),
                                                     contentDescription = stringResource(R.string.close),
                                                 )
                                             }

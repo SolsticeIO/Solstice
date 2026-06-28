@@ -92,7 +92,7 @@ class ExoDownloadService :
             .addAction(
                 Notification.Action
                     .Builder(
-                        Icon.createWithResource(this, R.drawable.solar_close_square),
+                        Icon.createWithResource(this, R.drawable.close),
                         getString(android.R.string.cancel),
                         PendingIntent.getService(
                             this,

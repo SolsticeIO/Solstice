@@ -354,36 +354,6 @@ fun PlayerTopActions(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Surface(
-                    onClick = {
-                        val intent =
-                            Intent().apply {
-                                action = Intent.ACTION_SEND
-                                type = "text/plain"
-                                putExtra(
-                                    Intent.EXTRA_TEXT,
-                                    "https://music.youtube.com/watch?v=${mediaMetadata.id}",
-                                )
-                            }
-                        context.startActivity(Intent.createChooser(intent, null))
-                    },
-                    shape = RoundedCornerShape(14.dp),
-                    color = textBackgroundColor.copy(alpha = 0.12f),
-                    modifier =
-                        Modifier
-                            .height(44.dp)
-                            .width(44.dp),
-                ) {
-                    Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
-                        Icon(
-                            painter = painterResource(R.drawable.solar_share),
-                            contentDescription = null,
-                            tint = textBackgroundColor,
-                            modifier = Modifier.size(22.dp),
-                        )
-                    }
-                }
-
-                Surface(
                     onClick = { playerConnection.toggleLike() },
                     shape = RoundedCornerShape(14.dp),
                     color =
@@ -419,41 +389,6 @@ fun PlayerTopActions(
                     }
                 }
 
-                // More menu button - cinematic glass card
-                Surface(
-                    onClick = {
-                        menuState.show {
-                            PlayerMenu(
-                                mediaMetadata = mediaMetadata,
-                                navController = navController,
-                                playerBottomSheetState = state,
-                                onShowDetailsDialog = {
-                                    mediaMetadata.id.let {
-                                        bottomSheetPageState.show {
-                                            ShowMediaInfo(it)
-                                        }
-                                    }
-                                },
-                                onDismiss = menuState::dismiss,
-                            )
-                        }
-                    },
-                    shape = RoundedCornerShape(14.dp),
-                    color = textBackgroundColor.copy(alpha = 0.12f),
-                    modifier =
-                        Modifier
-                            .height(44.dp)
-                            .width(44.dp),
-                ) {
-                    Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
-                        Icon(
-                            painter = painterResource(R.drawable.solar_menu_dots_circle),
-                            contentDescription = null,
-                            tint = textBackgroundColor,
-                            modifier = Modifier.size(22.dp),
-                        )
-                    }
-                }
             }
         }
 
@@ -1166,10 +1101,7 @@ fun PlayerPlaybackControls(
                                 playerConnection.player.shuffleModeEnabled = !shuffleModeEnabled
                             },
                             shape = RoundedCornerShape(smallRadius),
-                            color =
-                                textBackgroundColor.copy(
-                                    alpha = if (shuffleModeEnabled) 0.2f else 0.08f,
-                                ),
+                            color = Color.Transparent,
                             modifier = Modifier.size(small),
                         ) {
                             Box(
@@ -1197,7 +1129,7 @@ fun PlayerPlaybackControls(
                             },
                             enabled = canSkipPrevious,
                             shape = RoundedCornerShape(largeRadius),
-                            color = textBackgroundColor.copy(alpha = 0.15f),
+                            color = Color.Transparent,
                             modifier = Modifier.size(large),
                         ) {
                             Box(
@@ -1228,7 +1160,7 @@ fun PlayerPlaybackControls(
                             }
                         },
                         shape = RoundedCornerShape(cinematicPlayPauseCorner),
-                        color = textButtonColor,
+                        color = Color.Transparent,
                         modifier =
                             Modifier
                                 .padding(horizontal = 20.dp)
@@ -1254,7 +1186,7 @@ fun PlayerPlaybackControls(
                                             },
                                         ),
                                     contentDescription = null,
-                                    tint = icBackgroundColor,
+                                    tint = textBackgroundColor,
                                     modifier = Modifier.size(44.dp),
                                 )
                             }
@@ -1272,7 +1204,7 @@ fun PlayerPlaybackControls(
                             },
                             enabled = canSkipNext,
                             shape = RoundedCornerShape(largeRadius),
-                            color = textBackgroundColor.copy(alpha = 0.15f),
+                            color = Color.Transparent,
                             modifier = Modifier.size(large),
                         ) {
                             Box(
@@ -1304,10 +1236,7 @@ fun PlayerPlaybackControls(
                                 playerConnection.player.toggleRepeatMode()
                             },
                             shape = RoundedCornerShape(smallRadius),
-                            color =
-                                textBackgroundColor.copy(
-                                    alpha = if (repeatMode != Player.REPEAT_MODE_OFF) 0.2f else 0.08f,
-                                ),
+                            color = Color.Transparent,
                             modifier = Modifier.size(small),
                         ) {
                             Box(

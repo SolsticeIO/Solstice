@@ -594,7 +594,7 @@ private fun AppleMusicTrackHeader(
         Spacer(modifier = Modifier.width(12.dp))
 
         AppleMusicHeaderIconButton(
-            iconRes = R.drawable.solar_close_square,
+            iconRes = R.drawable.close,
             contentDescription = stringResource(R.string.close),
             onClick = onDismissClick,
         )

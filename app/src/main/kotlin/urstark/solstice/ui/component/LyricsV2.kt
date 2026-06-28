@@ -991,7 +991,7 @@ fun LyricsV2(
                             contentAlignment = Alignment.Center,
                         ) {
                             Icon(
-                                painter = painterResource(id = R.drawable.solar_close_square),
+                                painter = painterResource(id = R.drawable.close),
                                 contentDescription = stringResource(R.string.cancel),
                                 tint = Color.White,
                                 modifier = Modifier.size(20.dp),

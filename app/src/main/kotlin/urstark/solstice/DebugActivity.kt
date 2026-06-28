@@ -188,7 +188,7 @@ private fun CrashReportScaffold(
                     }
                     IconButton(onClick = onClose) {
                         Icon(
-                            painter = painterResource(R.drawable.solar_close_square),
+                            painter = painterResource(R.drawable.close),
                             contentDescription = null,
                         )
                     }

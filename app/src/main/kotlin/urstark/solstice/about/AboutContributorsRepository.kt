@@ -197,7 +197,7 @@ class AboutContributorsRepository
 
         private companion object {
             const val ContributorsLimit = 20
-            const val GitHubOwner = "SolsticeApp"
+            const val GitHubOwner = "SolsticeIO"
             const val GitHubRepo = "Solstice"
         }
     }

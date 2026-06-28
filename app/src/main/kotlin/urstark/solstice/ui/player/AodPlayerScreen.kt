@@ -186,7 +186,7 @@ fun AodPlayerScreen(
                         .padding(8.dp),
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.solar_close_square),
+                    painter = painterResource(R.drawable.close),
                     contentDescription = stringResource(R.string.aod_mode_exit),
                     tint = White70,
                 )

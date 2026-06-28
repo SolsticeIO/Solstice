@@ -446,7 +446,7 @@ fun BottomSheetPlayer(
             defaultValue = 256,
         )
 
-    val sliderStyle by rememberEnumPreference(SliderStyleKey, SliderStyle.Standard)
+    val sliderStyle by rememberEnumPreference(SliderStyleKey, SliderStyle.Wavy)
 
     LaunchedEffect(maxCanvasCacheSize) {
         CanvasArtworkPlaybackCache.setMaxSize(maxCanvasCacheSize)
@@ -1680,13 +1680,82 @@ fun BottomSheetPlayer(
                     ) {
                         Box(
                             contentAlignment = Alignment.Center,
-                            modifier = Modifier.weight(1f),
+                            modifier = Modifier.weight(1f).fillMaxWidth(),
                         ) {
                             Thumbnail(
                                 sliderPositionProvider = { sliderPosition },
                                 modifier = Modifier.nestedScroll(state.preUpPostDownNestedScrollConnection),
                                 isPlayerExpanded = state.isExpanded,
                             )
+                            
+                            if (playerDesignStyle == PlayerDesignStyle.V4) {
+                                mediaMetadata?.let { metadata ->
+                                    Row(
+                                        modifier = Modifier
+                                            .align(Alignment.TopEnd)
+                                            .padding(top = 16.dp, end = 24.dp)
+                                            .statusBarsPadding(),
+                                        horizontalArrangement = Arrangement.spacedBy(16.dp),
+                                        verticalAlignment = Alignment.CenterVertically
+                                    ) {
+                                        Surface(
+                                            onClick = {
+                                                val intent = Intent().apply {
+                                                    action = Intent.ACTION_SEND
+                                                    type = "text/plain"
+                                                    putExtra(
+                                                        Intent.EXTRA_TEXT,
+                                                        "https://music.youtube.com/watch?v=${metadata.id}"
+                                                    )
+                                                }
+                                                context.startActivity(Intent.createChooser(intent, null))
+                                            },
+                                            shape = RoundedCornerShape(14.dp),
+                                            color = Color.Transparent,
+                                            modifier = Modifier.size(44.dp)
+                                        ) {
+                                            Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
+                                                Icon(
+                                                    painter = painterResource(R.drawable.solar_share),
+                                                    contentDescription = null,
+                                                    tint = TextBackgroundColor,
+                                                    modifier = Modifier.size(24.dp)
+                                                )
+                                            }
+                                        }
+
+                                        Surface(
+                                            onClick = {
+                                                menuState.show {
+                                                    PlayerMenu(
+                                                        mediaMetadata = metadata,
+                                                        navController = navController,
+                                                        playerBottomSheetState = state,
+                                                        onShowDetailsDialog = {
+                                                            bottomSheetPageState.show {
+                                                                ShowMediaInfo(it)
+                                                            }
+                                                        },
+                                                        onDismiss = menuState::dismiss,
+                                                    )
+                                                }
+                                            },
+                                            shape = RoundedCornerShape(14.dp),
+                                            color = Color.Transparent,
+                                            modifier = Modifier.size(44.dp)
+                                        ) {
+                                            Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
+                                                Icon(
+                                                    painter = painterResource(R.drawable.solar_menu_dots_circle),
+                                                    contentDescription = null,
+                                                    tint = TextBackgroundColor,
+                                                    modifier = Modifier.size(24.dp)
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         enrichedMetadata?.let {

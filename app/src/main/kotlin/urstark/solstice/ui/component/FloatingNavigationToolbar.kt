@@ -276,7 +276,7 @@ private fun FloatingToolbarOverflowAction(
                     ) {
                         Box(contentAlignment = Alignment.Center) {
                             Icon(
-                                painter = painterResource(R.drawable.solar_cosmetic),
+                                painter = painterResource(R.drawable.solar_microphone_2),
                                 contentDescription =
                                     musicRecognitionContentDescription.ifEmpty {
                                         stringResource(R.string.music_recognition)

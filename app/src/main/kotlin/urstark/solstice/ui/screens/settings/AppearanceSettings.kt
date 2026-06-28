@@ -214,7 +214,7 @@ fun AppearanceSettings(
     val (sliderStyle, onSliderStyleChange) =
         rememberEnumPreference(
             SliderStyleKey,
-            defaultValue = SliderStyle.Standard,
+            defaultValue = SliderStyle.Wavy,
         )
     val (swipeThumbnail, onSwipeThumbnailChange) =
         rememberPreference(

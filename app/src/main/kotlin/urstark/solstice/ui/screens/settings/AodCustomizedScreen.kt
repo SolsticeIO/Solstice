@@ -364,7 +364,7 @@ fun AodCustomizedScreen(
                     item {
                         SwitchPreference(
                             title = { Text(stringResource(R.string.aod_customize_show_exit_button)) },
-                            icon = { Icon(painterResource(R.drawable.solar_close_square), null) },
+                            icon = { Icon(painterResource(R.drawable.close), null) },
                             checked = showExitButton,
                             onCheckedChange = onShowExitButtonChange,
                         )
@@ -609,7 +609,7 @@ private fun AodPreviewCard(
             ) {
                 if (settings.showExitButton) {
                     Icon(
-                        painter = painterResource(R.drawable.solar_close_square),
+                        painter = painterResource(R.drawable.close),
                         contentDescription = null,
                         tint = Color.White.copy(alpha = 0.72f),
                         modifier =

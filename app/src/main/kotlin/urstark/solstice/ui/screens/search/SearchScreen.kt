@@ -10,6 +10,11 @@
  */
 package urstark.solstice.ui.screens.search
 
+import android.app.Activity
+import android.content.Intent
+import android.speech.RecognizerIntent
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Arrangement
@@ -95,7 +100,7 @@ import urstark.solstice.viewmodels.SearchDiscoveryViewModel
 @Composable
 fun SearchScreen(
     navController: NavController,
-    onSearchClick: () -> Unit,
+    onSearchClick: (String?) -> Unit,
     viewModel: SearchDiscoveryViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -125,7 +130,8 @@ fun SearchScreen(
             contentType = "search_field",
         ) {
             SearchEntryField(
-                onClick = onSearchClick,
+                onClick = { onSearchClick(null) },
+                onVoiceSearch = { query -> onSearchClick(query) },
                 modifier =
                     Modifier
                         .fillMaxWidth()
@@ -255,8 +261,20 @@ fun SearchScreen(
 @Composable
 private fun SearchEntryField(
     onClick: () -> Unit,
+    onVoiceSearch: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val context = androidx.compose.ui.platform.LocalContext.current
+    val speechRecognizerLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val matches = result.data?.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
+            matches?.firstOrNull()?.let { text ->
+                onVoiceSearch(text)
+            }
+        }
+    }
     SearchBar(
         inputField = {
             SearchBarDefaults.InputField(
@@ -281,10 +299,23 @@ private fun SearchEntryField(
                     )
                 },
                 trailingIcon = {
-                    Icon(
-                        painter = painterResource(R.drawable.solar_folder),
-                        contentDescription = null,
-                    )
+                    IconButton(
+                        onClick = {
+                            try {
+                                val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+                                    putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+                                }
+                                speechRecognizerLauncher.launch(intent)
+                            } catch (e: Exception) {
+                                android.widget.Toast.makeText(context, "Voice search is not available", android.widget.Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    ) {
+                        Icon(
+                            painter = painterResource(R.drawable.solar_microphone_2),
+                            contentDescription = null,
+                        )
+                    }
                 },
             )
         },
