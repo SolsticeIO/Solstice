@@ -127,6 +127,28 @@ fun NavGraphBuilder.navigationBuilder(
     composable(Screens.Social.route) {
         SocialScreen(navController)
     }
+    composable("social_settings") {
+        urstark.solstice.ui.screens.social.SocialSettingsScreen(navController)
+    }
+    composable("social_search") {
+        urstark.solstice.ui.screens.social.MatrixSearchScreen(navController)
+    }
+    composable("new_chat") {
+        urstark.solstice.ui.screens.social.NewChatScreen(navController)
+    }
+    composable("create_room") {
+        urstark.solstice.ui.screens.social.CreateRoomScreen(navController)
+    }
+    composable("create_space") {
+        urstark.solstice.ui.screens.social.CreateSpaceScreen(navController)
+    }
+    composable("room_directory") {
+        urstark.solstice.ui.screens.social.RoomDirectoryScreen(navController)
+    }
+    composable("chat/{roomId}") { backStackEntry ->
+        val roomId = backStackEntry.arguments?.getString("roomId") ?: ""
+        urstark.solstice.ui.screens.social.ChatScreen(roomId = roomId, navController = navController)
+    }
     composable(Screens.Search.route) {
         SearchScreen(
             navController = navController,

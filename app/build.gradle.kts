@@ -41,6 +41,9 @@ android {
     compileSdk = 37
 
     defaultConfig {
+        ndk {
+            abiFilters.add("arm64-v8a")
+        }
     applicationId = "urstark.solstice"
         minSdk = 26
         targetSdk = 37
@@ -316,6 +319,7 @@ dependencies {
 
     implementation(libs.ktor.client.core)
     implementation(libs.ktor.client.okhttp)
+    implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization.json)
     implementation(libs.ktor.client.websockets)
     implementation(libs.ktor.server.core)
