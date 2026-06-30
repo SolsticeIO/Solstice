@@ -21,6 +21,8 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.Dispatchers
 import org.matrix.rustcomponents.sdk.CreateRoomParameters
 import org.matrix.rustcomponents.sdk.RoomPreset
 import org.matrix.rustcomponents.sdk.RoomVisibility
@@ -220,7 +222,9 @@ fun NewChatScreen(
                                                     avatar = null,
                                                     powerLevelContentOverride = null
                                                 )
-                                                val roomId = client.createRoom(params)
+                                                val roomId = withContext(Dispatchers.IO) {
+                                                    client.createRoom(params)
+                                                }
                                                 navController.navigate("chat/$roomId") {
                                                     popUpTo("social")
                                                 }

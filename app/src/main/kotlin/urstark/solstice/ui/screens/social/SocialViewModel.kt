@@ -200,11 +200,26 @@ class SocialViewModel @Inject constructor(
         viewModelScope.launch {
             _isLoadingSettings.value = true
             try {
-                _devices.value = matrixRestApiClient.getDevices(client)
-                _pushRules.value = matrixRestApiClient.getPushRules(client)
-                _threePids.value = matrixRestApiClient.get3PIDs(client)
-                
-                loadIgnoredUsers(client)
+                try {
+                    _devices.value = matrixRestApiClient.getDevices(client)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
+                try {
+                    _pushRules.value = matrixRestApiClient.getPushRules(client)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
+                try {
+                    _threePids.value = matrixRestApiClient.get3PIDs(client)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
+                try {
+                    loadIgnoredUsers(client)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
                 
                 try {
                     val notifSettings = client.getNotificationSettings()

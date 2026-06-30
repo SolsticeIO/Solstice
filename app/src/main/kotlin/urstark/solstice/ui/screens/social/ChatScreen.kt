@@ -117,7 +117,7 @@ fun ChatScreen(
     }
 
     DisposableEffect(roomId) {
-        var taskHandle: org.matrix.rustcomponents.sdk.TaskHandle? = null
+        var timelineListenerResult: Any? = null
         val client = viewModel.matrixManager.client
         if (client != null) {
             scope.launch {
@@ -134,7 +134,7 @@ fun ChatScreen(
                         val t = r.timeline()
                         timeline = t
                         
-                        t.addListener(object : TimelineListener {
+                        val listenerResult = t.addListener(object : TimelineListener {
                             override fun onUpdate(diffs: List<TimelineDiff>) {
                                 for (diff in diffs) {
                                     when (diff.change()) {
@@ -165,6 +165,7 @@ fun ChatScreen(
                                 }
                             }
                         })
+                        timelineListenerResult = listenerResult
                     }
                 } catch (e: Exception) {
                     e.printStackTrace()
@@ -172,7 +173,17 @@ fun ChatScreen(
             }
         }
         onDispose {
-            taskHandle?.cancel()
+            try {
+                val methods = timelineListenerResult?.javaClass?.methods ?: emptyArray()
+                val getStreamMethod = methods.find { 
+                    it.name == "getItemsStream" || it.name == "getTaskHandle" || 
+                    it.name == "itemsStream" || it.name == "taskHandle" 
+                }
+                val handle = getStreamMethod?.invoke(timelineListenerResult) as? org.matrix.rustcomponents.sdk.TaskHandle
+                handle?.cancel()
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
             scope.launch {
                 try {
                     room?.typingNotice(false)
